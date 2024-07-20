@@ -13,4 +13,4 @@
 - [音乐在线播放](https://126.plus/Gmemp/) - 一个纯静态页面设计的音乐播放器，可以完全托管在Github Pages上或者其他任意静态服务器（如阿里云OSS）
 - [个人拍照图片展示](https://126.plus/space/) - 将自己拍的一些照片做成一个静态页面展示
 - [affiliate导航](https://126.plus/affiliate-bookmark/) - affiliate 专属导航
-- [affiliate导航](http://aff.126.plus/affiliate-bookmark/) - 另一个wordpress搭建的affiliate导航
+- [affiliate导航](http://aff.126.plus/) - 另一个wordpress搭建的affiliate导航
