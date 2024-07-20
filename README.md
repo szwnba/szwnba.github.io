@@ -7,6 +7,6 @@
 
 ## 一些琐碎
 - [WeChat Markdown Editor](https://126.plus/md/) - 一款高度简洁的微信 Markdown 编辑器
-- [音乐在线播放](https://szwnba.github.io/Gmemp/) - 一个纯静态页面设计的音乐播放器，可以完全托管在Github Pages上或者其他任意静态服务器（如阿里云OSS）
-- [个人拍照图片展示](https://szwnba.github.io/space/) - 将自己拍的一些照片做成一个静态页面展示
-- [affiliate导航](https://szwnba.github.io/affiliate-bookmark/) - affiliate 专属导航
+- [音乐在线播放](https://126.plus/Gmemp/) - 一个纯静态页面设计的音乐播放器，可以完全托管在Github Pages上或者其他任意静态服务器（如阿里云OSS）
+- [个人拍照图片展示](https://126.plus/space/) - 将自己拍的一些照片做成一个静态页面展示
+- [affiliate导航](https://126.plus/affiliate-bookmark/) - affiliate 专属导航
