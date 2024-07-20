@@ -4,7 +4,7 @@
 ### 个人空间
 - [BOOKMARK](https://szwnba.github.io/szwnba.github.io/) - 收集个人开发制作的一些小项目、网站
 - [Johnson的备忘录](https://szwnba.github.io/affweb/) - 个人的备忘录空间，收集有关 AI、IT、自媒体相关领域的内容
-- [另一个备忘录](https://szwnba.github.io/affweb/) - 早期的一个博客，主要收集主机、Linux运维相关领域的内容
+- [另一个备忘录](http://myblog.126.plus/) - 早期的一个博客，主要收集主机、Linux运维相关领域的内容
 
 ### 一些琐碎的收藏
 - [WeChat Markdown Editor](https://126.plus/md/) - 一款高度简洁的微信 Markdown 编辑器
