@@ -1,5 +1,5 @@
 # Johnson's Workspace
-收集个人开发制作的一些小项目、网站，有的是直接Fork过来的，有的是在开源基础做了二次开发。
+收集个人制作的一些应用、网站，有的是直接Fork过来的，有的是在开源基础做了二次开发。
 
 ### 个人空间
 - [BOOKMARK](https://szwnba.github.io/szwnba.github.io/) - 收集个人开发制作的一些小项目、网站
