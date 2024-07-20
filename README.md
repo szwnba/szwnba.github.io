@@ -10,7 +10,7 @@
 - [一些琐碎](#一些琐碎)
 
 ## 个人空间
-
+- [BOOKMARK](https://szwnba.github.io/szwnba.github.io/) - 收集个人开发制作的一些小项目、网站
 - [个人博客](https://szwnba.github.io/affweb/) - 个人的笔记空间，收集有关 AI、IT、自媒体相关领域的内容
 
 **[⬆ back to top](#table-of-contents)**
