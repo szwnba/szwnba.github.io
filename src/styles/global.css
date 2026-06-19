@@ -1,0 +1,181 @@
+@import 'tailwindcss';
+
+:root,
+[data-theme='dark'] {
+  /* Softer colors - same vibe, gentler on eyes 🐄 */
+  --bg: #1a2e1f; /* Deep forest green */
+  --bg-darker: #152518; /* Even deeper */
+  --bg-card: #243328; /* Card background */
+  --bg-secondary: #2a3d30;
+  --bg-tertiary: #354840;
+  --bg-elevated: #2d3f32; /* Elevated surfaces */
+
+  --accent: #f472b6; /* Soft pink like my flower 🌸 */
+  --accent-soft: rgba(244, 114, 182, 0.15);
+  --accent-glow: rgba(244, 114, 182, 0.25);
+
+  --mint: #86efac; /* Mint green accent */
+  --mint-soft: rgba(134, 239, 172, 0.15);
+
+  --cream: #fef3c7; /* Cream like my fur */
+  --cream-soft: rgba(254, 243, 199, 0.1);
+
+  --text: #f1f5f9; /* Light text */
+  --text-dim: #a7c4b5; /* Muted mint-tinted text */
+  --text-muted: #6b8f7a; /* Even more muted */
+
+  --border: #3d5a45; /* Soft green border */
+  --success: #4ade80; /* Green for status */
+}
+
+[data-theme='light'] {
+  --bg: #f8faf8; /* Light green-tinted white */
+  --bg-darker: #e8f0e8;
+  --bg-card: #ffffff;
+  --bg-secondary: #f0f5f0;
+  --bg-tertiary: #e5ede5;
+  --bg-elevated: #ffffff;
+
+  --accent: #db2777; /* Slightly deeper pink for contrast */
+  --accent-soft: rgba(219, 39, 119, 0.1);
+  --accent-glow: rgba(219, 39, 119, 0.2);
+
+  --mint: #16a34a;
+  --mint-soft: rgba(22, 163, 74, 0.1);
+
+  --cream: #854d0e;
+  --cream-soft: rgba(133, 77, 14, 0.1);
+
+  --text: #1a2e1f; /* Dark text */
+  --text-dim: #3d5a45;
+  --text-muted: #6b8f7a;
+
+  --border: #d1e0d5;
+  --success: #16a34a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue',
+    sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+/* Clean solid background */
+.gradient-bg {
+  background: var(--bg);
+  min-height: 100vh;
+}
+
+/* Glow effect for the logo */
+.logo-glow {
+  filter: drop-shadow(0 0 40px var(--accent-glow));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent);
+}
+
+/* Animated underline for links */
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Pulse animation for status dot */
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Cute button style */
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent) 0%, #ec4899 100%);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px var(--accent-glow);
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+/* Fade in animation for speech bubble */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
