@@ -1,63 +1,120 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import { getCollection } from 'astro:content'
+import { DEFAULT_LANG, type Lang } from '../../i18n'
 
 const allPosts = await getCollection('blog')
-
-// Sort by date descending
-const posts = allPosts.sort((a, b) => 
-  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+const posts = allPosts.sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
 )
 
-// Calculate reading time
-function calculateReadingTime(content: string): number {
-  const wordsPerMinute = 200
-  const words = content.trim().split(/\s+/).length
-  return Math.max(1, Math.ceil(words / wordsPerMinute))
-}
+const pageLang: Lang = DEFAULT_LANG
+
+// Serialize posts data for client-side rendering
+const postsJSON = JSON.stringify(
+  posts.map((p) => ({
+    slug: p.slug,
+    title: p.data.title,
+    excerpt: p.data.excerpt,
+    date: p.data.date,
+    tags: p.data.tags || [],
+    body: p.body,
+  }))
+)
 ---
 
-<BaseLayout title="Blog - Maude 🐄" description="Random musings, thoughts, and the occasional moo.">
+<BaseLayout
+  title={pageLang === 'en' ? 'Blog - Maude 🐄' : '博客 - Maude 🐄'}
+  description={
+    pageLang === 'en'
+      ? 'Random musings, thoughts, and the occasional moo.'
+      : '随想、思考，偶尔的哞哞声。'
+  }
+>
   <div class="max-w-3xl mx-auto px-6 py-12">
-    <h1 class="text-4xl font-bold mb-2">Blog 📝</h1>
-    <p class="text-[var(--text-dim)] mb-8">
-      Random musings, thoughts, and the occasional moo.
+    <h1 class="text-4xl font-bold mb-2" data-i18n="blog.title">
+      {pageLang === 'en' ? 'Blog 📝' : '博客 📝'}
+    </h1>
+    <p class="text-[var(--text-dim)] mb-8" data-i18n="blog.subtitle">
+      {pageLang === 'en'
+        ? 'Random musings, thoughts, and the occasional moo.'
+        : '随想、思考，偶尔的哞哞声。'}
     </p>
 
-    <div class="space-y-8">
-      {posts.map((post) => {
-        const readingTime = calculateReadingTime(post.body)
-        return (
-          <article class="p-6 bg-[var(--bg-card)] rounded-2xl border border-[var(--border)] hover:border-[var(--accent)] transition-colors">
-            <a href={`/blog/${post.slug}`}>
-              <h2 class="text-2xl font-semibold mb-2 hover:text-[var(--accent)] transition-colors">
-                {post.data.title}
-              </h2>
-            </a>
-            <div class="flex items-center gap-2 text-[var(--text-muted)] text-sm mb-3">
-              <time>{post.data.date}</time>
-              <span>•</span>
-              <span>{readingTime} min read</span>
-            </div>
-            <p class="text-[var(--text-dim)]">{post.data.excerpt}</p>
-            {post.data.tags && post.data.tags.length > 0 && (
-              <div class="flex flex-wrap gap-2 mt-3">
-                {post.data.tags.map((tag) => (
-                  <span class="text-xs px-2 py-1 rounded-full bg-[var(--bg-secondary)] text-[var(--text-dim)]">
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-            )}
-            <a
-              href={`/blog/${post.slug}`}
-              class="inline-block mt-4 text-[var(--accent)] hover:underline"
-            >
-              Read more →
-            </a>
-          </article>
-        )
-      })}
-    </div>
+    <div data-posts-list class="space-y-8"></div>
   </div>
+
+  <script is:inline define:vars={{ postsJSON }}>
+    window.__POSTS__ = JSON.parse(postsJSON)
+  </script>
 </BaseLayout>
+
+<script>
+  const LABELS_ZH = {
+    title: '博客 📝',
+    subtitle: '随想、思考，偶尔的哞哞声。',
+    minRead: '分钟阅读',
+    readMore: '阅读更多 →',
+  }
+
+  const LABELS_EN = {
+    title: 'Blog 📝',
+    subtitle: 'Random musings, thoughts, and the occasional moo.',
+    minRead: 'min read',
+    readMore: 'Read more →',
+  }
+
+  function calculateReadingTime(body: string) {
+    const wordsPerMinute = 200
+    const words = body.trim().split(/\s+/).length
+    return Math.max(1, Math.ceil(words / wordsPerMinute))
+  }
+
+  const POSTS = (window as any).__POSTS__ || []
+
+  function getLang(): 'zh' | 'en' {
+    const l = document.documentElement.getAttribute('data-lang')
+    return l === 'en' ? 'en' : 'zh'
+  }
+
+  function renderPosts() {
+    const labels = getLang() === 'en' ? LABELS_EN : LABELS_ZH
+    const titleEl = document.querySelector('[data-i18n="blog.title"]')
+    if (titleEl) titleEl.textContent = labels.title
+    const subEl = document.querySelector('[data-i18n="blog.subtitle"]')
+    if (subEl) subEl.textContent = labels.subtitle
+
+    const list = document.querySelector('[data-posts-list]')
+    if (!list) return
+    if (POSTS.length === 0) return
+
+    list.innerHTML = POSTS.map(
+      (p: { slug: string; title: string; excerpt: string; date: string; tags: string[]; body: string }) => {
+        const readingTime = calculateReadingTime(p.body)
+        const tagsHtml =
+          p.tags && p.tags.length
+            ? `<div class="flex flex-wrap gap-2 mt-3">${p.tags
+                .map(
+                  (t) =>
+                    `<span class="text-xs px-2 py-1 rounded-full bg-[var(--bg-secondary)] text-[var(--text-dim)]">#${t}</span>`
+                )
+                .join('')}</div>`
+            : ''
+        return `<article class="p-6 bg-[var(--bg-card)] rounded-2xl border border-[var(--border)] hover:border-[var(--accent)] transition-colors">
+            <a href="/blog/${p.slug}"><h2 class="text-2xl font-semibold mb-2 hover:text-[var(--accent)] transition-colors">${p.title}</h2></a>
+            <div class="flex items-center gap-2 text-[var(--text-muted)] text-sm mb-3">
+              <time>${p.date}</time>
+              <span>•</span>
+              <span>${readingTime} ${labels.minRead}</span>
+            </div>
+            <p class="text-[var(--text-dim)]">${p.excerpt}</p>
+            ${tagsHtml}
+            <a href="/blog/${p.slug}" class="inline-block mt-4 text-[var(--accent)] hover:underline">${labels.readMore}</a>
+          </article>`
+      }
+    ).join('')
+  }
+
+  window.addEventListener('langchange', () => renderPosts())
+  renderPosts()
+</script>

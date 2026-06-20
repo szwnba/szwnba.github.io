@@ -2,29 +2,46 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<BaseLayout title="404 - Page Not Found" description="This page doesn't exist.">
-  <div class="min-h-[80vh] flex flex-col items-center justify-center text-center px-6">
-    <div class="text-8xl mb-6 animate-bounce">🐄</div>
-    <h1 class="text-6xl font-bold mb-4">404</h1>
-    <p class="text-2xl text-[var(--text-dim)] mb-2">Oops! This pasture doesn't exist.</p>
-    <p class="text-[var(--text-muted)] mb-8">Looks like this cow wandered off the trail...</p>
-    <a href="/" class="btn-primary">
-      Take me home 🏠
+<BaseLayout title="404 - Maude 🐄">
+  <div class="max-w-2xl mx-auto px-6 py-16 text-center">
+    <div class="text-8xl mb-6">🐄</div>
+    <h1 class="text-5xl font-bold mb-4" data-i18n="notFound.title">
+      404 —— 没找到 🐄
+    </h1>
+    <p class="text-[var(--text-dim)] text-lg mb-8" data-i18n="notFound.subtitle">
+      嗯…… 这片牧场是空的。
+    </p>
+    <a href="/" class="inline-block text-[var(--accent)] hover:underline font-medium text-lg" data-i18n="notFound.back">
+      回到首页 →
     </a>
-
-    <div class="mt-12 text-[var(--text-muted)] text-sm">
-      <p>Maybe try one of these?</p>
-      <div class="flex gap-4 mt-3 justify-center">
-        <a href="/about" class="text-[var(--accent)] hover:underline">
-          About
-        </a>
-        <a href="/projects" class="text-[var(--accent)] hover:underline">
-          Projects
-        </a>
-        <a href="/blog" class="text-[var(--accent)] hover:underline">
-          Blog
-        </a>
-      </div>
-    </div>
   </div>
 </BaseLayout>
+
+<script>
+  const NF_ZH: Record<string, string> = {
+    'notFound.title': '404 —— 没找到 🐄',
+    'notFound.subtitle': '嗯…… 这片牧场是空的。',
+    'notFound.back': '回到首页 →',
+  }
+  const NF_EN: Record<string, string> = {
+    'notFound.title': '404 — Not found 🐄',
+    'notFound.subtitle': 'Well... this pasture is empty.',
+    'notFound.back': 'Back to home →',
+  }
+
+  function getLang(): 'zh' | 'en' {
+    const l = document.documentElement.getAttribute('data-lang')
+    return l === 'en' ? 'en' : 'zh'
+  }
+
+  function apply404Labels() {
+    const labels = getLang() === 'en' ? NF_EN : NF_ZH
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const key = (el as HTMLElement).getAttribute('data-i18n') || ''
+      if (labels[key]) el.textContent = labels[key]
+    })
+  }
+
+  window.addEventListener('langchange', () => apply404Labels())
+  apply404Labels()
+</script>

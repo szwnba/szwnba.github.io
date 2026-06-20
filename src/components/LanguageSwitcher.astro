@@ -1,0 +1,71 @@
+---
+import { DEFAULT_LANG } from '../i18n'
+---
+
+<button
+  id="lang-switcher"
+  class="lang-switcher"
+  data-default-lang={DEFAULT_LANG}
+  aria-label="切换语言 / Switch language"
+  title="切换语言 / Switch language"
+>
+  <span data-lang-label>中 / EN</span>
+</button>
+
+<script>
+  const btn = document.getElementById('lang-switcher') as HTMLButtonElement | null
+  const label = document.querySelector('[data-lang-label]') as HTMLElement | null
+
+  function applyLang(lang: 'zh' | 'en') {
+    document.documentElement.setAttribute('data-lang', lang)
+    window.localStorage.setItem('lang', lang)
+    if (label) {
+      label.textContent = lang === 'zh' ? '中 / EN' : 'EN / 中'
+    }
+    // Re-render translatable elements
+    window.dispatchEvent(new CustomEvent('langchange', { detail: { lang } }))
+  }
+
+  function detectLang(): 'zh' | 'en' {
+    const stored = window.localStorage.getItem('lang') as 'zh' | 'en' | null
+    if (stored === 'zh' || stored === 'en') return stored
+    const browser = window.navigator.language.toLowerCase()
+    return browser === 'en' || browser.startsWith('en-') ? 'en' : 'zh'
+  }
+
+  if (btn) {
+    // Initial apply
+    applyLang(detectLang())
+
+    btn.addEventListener('click', () => {
+      const current = (document.documentElement.getAttribute('data-lang') as 'zh' | 'en') || 'zh'
+      const next = current === 'zh' ? 'en' : 'zh'
+      applyLang(next)
+    })
+  }
+</script>
+
+<style>
+  .lang-switcher {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+  }
+
+  .lang-switcher:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  .lang-switcher:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+</style>
