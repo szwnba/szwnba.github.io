@@ -5,6 +5,7 @@ export const translations = {
     about: 'System',
     projects: 'Skills',
     blog: 'Knowledge Base',
+    report: 'Report',
   },
 
   // ===== Footer =====
@@ -168,6 +169,18 @@ export const translations = {
         skills: 'OpenHue',
         desc: 'Philips Hue light control' },
     ],
+  },
+
+  // ===== 分析报告 =====
+  report: {
+    title: '📊 Knowledge Base Analysis Report',
+    subtitle: '308 articles · 13 categories · Full data analysis',
+    generated: 'Generated',
+    dataSource: '00_Inbox/ 308 articles',
+    scope: '13 topic categories',
+    overview: 'Overview',
+    metrics: 'Metric',
+    value: 'Value',
   },
 
   // ===== Knowledge Base =====

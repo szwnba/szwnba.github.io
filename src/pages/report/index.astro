@@ -1,0 +1,344 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { t, DEFAULT_LANG, type Lang } from '../../i18n'
+
+const pageLang: Lang = DEFAULT_LANG
+---
+
+<BaseLayout
+  title={`${t('report.title', pageLang)} - KB`}
+  description={t('report.subtitle', pageLang)}
+  pageLang={pageLang}
+>
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    <!-- Header -->
+    <header class="mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">{t('report.title', pageLang)}</h1>
+      <p class="text-[var(--text-dim)] mb-6">{t('report.subtitle', pageLang)}</p>
+      <div class="flex flex-wrap gap-4 text-sm text-[var(--text-muted)] border border-[var(--border)] rounded-xl p-4 bg-[var(--bg-card)]">
+        <span>📅 {t('report.generated', pageLang)}: 2026-06-28</span>
+        <span>📁 {t('report.dataSource', pageLang)}</span>
+        <span>📊 {t('report.scope', pageLang)}</span>
+      </div>
+    </header>
+
+    <!-- Section 1: 概览 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+        <span>一、</span><span>{t('report.overview', pageLang)}</span>
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-sm">
+          <thead>
+            <tr class="bg-[var(--bg-secondary)]">
+              <th class="border border-[var(--border)] px-4 py-3 text-left font-semibold">{t('report.metrics', pageLang)}</th>
+              <th class="border border-[var(--border)] px-4 py-3 text-left font-semibold">{t('report.value', pageLang)}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-[var(--bg-card)]"><td class="border border-[var(--border)] px-4 py-2.5">总文章数</td><td class="border border-[var(--border)] px-4 py-2.5 font-semibold">308 篇</td></tr>
+            <tr><td class="border border-[var(--border)] px-4 py-2.5">微信公众号文章</td><td class="border border-[var(--border)] px-4 py-2.5">224 篇 (73%)</td></tr>
+            <tr class="bg-[var(--bg-card)]"><td class="border border-[var(--border)] px-4 py-2.5">平均内容长度</td><td class="border border-[var(--border)] px-4 py-2.5">5.0 KB</td></tr>
+            <tr><td class="border border-[var(--border)] px-4 py-2.5">高质量文章 (10KB+)</td><td class="border border-[var(--border)] px-4 py-2.5">26 篇</td></tr>
+            <tr class="bg-[var(--bg-card)]"><td class="border border-[var(--border)] px-4 py-2.5">低质量文章 (1KB-)</td><td class="border border-[var(--border)] px-4 py-2.5">52 篇</td></tr>
+            <tr><td class="border border-[var(--border)] px-4 py-2.5">分类数量</td><td class="border border-[var(--border)] px-4 py-2.5">13 个（已从 42 个归一化）</td></tr>
+            <tr class="bg-[var(--bg-card)]"><td class="border border-[var(--border)] px-4 py-2.5">质量分布</td><td class="border border-[var(--border)] px-4 py-2.5 font-bold"><span class="text-[var(--success)]">🟢152</span> <span class="text-[var(--amber)]">🟡105</span> <span class="text-red-400">🔴51</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 2: 主题分布 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+        <span>二、</span><span>主题分布</span>
+      </h2>
+
+      <!-- Bar chart -->
+      <div class="mb-8 space-y-2">
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#1</span>
+          <span class="w-28 text-sm">🦞 OpenClaw</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--accent)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-white" style="width:41%">41</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#2</span>
+          <span class="w-28 text-sm">🎭 Playwright AI</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--accent)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-white" style="width:40%">40</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#3</span>
+          <span class="w-28 text-sm">🧪 测试工程</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--mint)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-white" style="width:37%">37</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#4</span>
+          <span class="w-28 text-sm">📈 投资与变现</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--mint)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-white" style="width:36%">36</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#5</span>
+          <span class="w-28 text-sm">🌐 浏览器自动化</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--amber)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-black" style="width:27%">27</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#6</span>
+          <span class="w-28 text-sm">🤖 AI Skill</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--text-muted)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-white" style="width:24%">24</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#7</span>
+          <span class="w-28 text-sm">💡 AI 理念</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--text-muted)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-white" style="width:23%">23</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#8</span>
+          <span class="w-28 text-sm">⌨️ Claude & OpenCode</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--text-muted)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-white" style="width:23%">23</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#9</span>
+          <span class="w-28 text-sm">🚀 Onboarding</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--text-muted)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-white" style="width:21%">21</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#10</span>
+          <span class="w-28 text-sm">🧠 AI Agent</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--text-muted)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-white" style="width:15%">15</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#11</span>
+          <span class="w-28 text-sm">🔧 开源工具</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--text-muted)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-white" style="width:10%">10</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-8 text-right text-[var(--text-muted)] text-xs">#12</span>
+          <span class="w-28 text-sm">⚡ Hermes</span>
+          <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-5 overflow-hidden">
+            <div class="bg-[var(--text-muted)] h-full rounded-full flex items-center justify-end pr-2 text-xs font-bold text-white" style="width:10%">10</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 核心解读 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] card-hover">
+          <h3 class="font-semibold mb-2">🦞 OpenClaw <span class="text-[var(--accent)]">41 篇</span></h3>
+          <p class="text-[var(--text-dim)] text-sm">最大的主题。涵盖安装、配置、实战案例，是当前重点投入的工具。</p>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] card-hover">
+          <h3 class="font-semibold mb-2">🎭 Playwright AI <span class="text-[var(--accent)]">40 篇</span></h3>
+          <p class="text-[var(--text-dim)] text-sm">第二大主题。聚焦 Playwright + AI：MCP、自愈测试、POM 生成。</p>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] card-hover">
+          <h3 class="font-semibold mb-2">🧪 测试工程 <span class="text-[var(--mint)]">37 篇</span></h3>
+          <p class="text-[var(--text-dim)] text-sm">AI 驱动的测试方法论：用例生成、测试 Agent、测试平台。</p>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] card-hover">
+          <h3 class="font-semibold mb-2">📈 投资与变现 <span class="text-[var(--amber)]">36 篇</span></h3>
+          <p class="text-[var(--text-dim)] text-sm">AI 商业化探索：跨境电商、量化交易、副业自动化。</p>
+        </div>
+      </div>
+
+      <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)]">
+        <h3 class="font-semibold mb-2">🌐 浏览器自动化 <span>27 篇</span></h3>
+        <p class="text-[var(--text-dim)] text-sm">横向对比：Browser-Use、Stagehand、Midscene。</p>
+      </div>
+    </section>
+
+    <!-- Section 3: 高频关键词 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
+        <span>三、</span><span>高频关键词分析</span>
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-6">
+        <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--bg-card)] text-center">
+          <div class="text-2xl mb-1">🔥</div>
+          <div class="text-xl font-bold text-[var(--accent)]">95</div>
+          <div class="text-xs text-[var(--text-muted)]">测试</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--bg-card)] text-center">
+          <div class="text-2xl mb-1">🔥</div>
+          <div class="text-xl font-bold text-[var(--accent)]">53</div>
+          <div class="text-xs text-[var(--text-muted)]">Agent</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--bg-card)] text-center">
+          <div class="text-2xl mb-1">🔥</div>
+          <div class="text-xl font-bold text-[var(--accent)]">49</div>
+          <div class="text-xs text-[var(--text-muted)]">Skill</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--bg-card)] text-center">
+          <div class="text-2xl mb-1">🔥</div>
+          <div class="text-xl font-bold text-[var(--accent)]">48</div>
+          <div class="text-xs text-[var(--text-muted)]">Playwright</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--bg-card)] text-center">
+          <div class="text-2xl mb-1">🔥</div>
+          <div class="text-xl font-bold text-[var(--accent)]">45</div>
+          <div class="text-xs text-[var(--text-muted)]">OpenClaw</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--bg-card)] text-center">
+          <div class="text-2xl mb-1">🔥</div>
+          <div class="text-xl font-bold text-[var(--mint)]">40</div>
+          <div class="text-xs text-[var(--text-muted)]">浏览器自动化</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--bg-card)] text-center">
+          <div class="text-2xl mb-1">🔥</div>
+          <div class="text-xl font-bold text-[var(--mint)]">20</div>
+          <div class="text-xs text-[var(--text-muted)]">MCP</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--bg-card)] text-center">
+          <div class="text-2xl mb-1">🔥</div>
+          <div class="text-xl font-bold text-[var(--mint)]">18</div>
+          <div class="text-xs text-[var(--text-muted)]">Claude Code</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--bg-card)] text-center">
+          <div class="text-2xl mb-1">📌</div>
+          <div class="text-xl font-bold text-[var(--amber)]">13</div>
+          <div class="text-xs text-[var(--text-muted)]">投资</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--bg-card)] text-center">
+          <div class="text-2xl mb-1">📌</div>
+          <div class="text-xl font-bold text-[var(--amber)]">11</div>
+          <div class="text-xs text-[var(--text-muted)]">OpenCode</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Top 10 高质量 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">🏆 Top 20 高质量文章</h2>
+      <div class="space-y-2">
+        {['自动化测试正在被"Skills + Agent"重构',
+          'Playwright + MCP：给POM和pytest加一层AI能力（AI实战落地企业·第1篇）',
+          'AI生成Page Object：Playwright 1.59 + LLM，30秒写出完整PO类',
+          'OpenClaw + Claude Code 超强教程：一个人就能搭建完整的开发团队！',
+          '测试质量进阶｜前沿趋势融合(3)低代码/无代码测试平台实践：Mabl、Testim、Applitoo',
+          '我搭了一套国产的小龙虾方案，成本可控，还能 24小时自动干活',
+          'AI + Playwright 自动化测试，为什么很多人卡在第一条可运行脚本？',
+          '构建测试专属 AI Agent。让 AI 成为你的 24 小时质量专家（含完整代码与部署指南',
+          '一个文件让 AI Coding 效率翻倍：AGENTS.md 实践指南',
+          '万字长文：如何用 harness 的理念设计一个 AI 驱动的 UI 自动化工程。',
+          'UI测试最值得装的两个Skills：全页面元素自动识别，一键生成可执行脚本',
+          '一句话让浏览器自己干活？这个AI智能体系统做到了！',
+          '记一次AI辅助后端架构治理的尝试',
+          '2026 年 AI 编码的"渐进式 Spec"实战指南',
+          '模糊用例智能解析：让AI驱动的自动化测试更加可靠',
+          '🦞OpenClaw，你是不还没有安装上？这个中文版，可以试试！',
+          '90%跨境电商工作流会被Kimi OpenClaw+Skills替代',
+          'RAG和SQL，我全都要！实战教程：构建能自主决策的混合查询Agent',
+          'GitHub 狂飙 2.5 万标星，这款「会自愈」的 Python 爬虫框架杀疯了！',
+          '用AI的这三年，想跟你分享这9条心得。'].map((title, i) => (
+          <div class="flex items-center gap-3 border border-[var(--border)] rounded-lg p-3 bg-[var(--bg-card)] card-hover">
+            <span class="w-8 h-8 rounded-full bg-[var(--accent)]/20 text-[var(--accent)] flex items-center justify-center text-sm font-bold shrink-0">#{i + 1}</span>
+            <span class="text-sm text-[var(--text-dim)] flex-1">{title}</span>
+            <span class="text-xs text-[var(--text-muted)] shrink-0">~10.5 KB</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 技术栈画像 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">🔬 技术栈画像</h2>
+      <div class="border border-[var(--border)] rounded-xl overflow-hidden bg-[var(--bg-card)]">
+        <div class="bg-[var(--bg-secondary)] px-6 py-3 border-b border-[var(--border)] text-[var(--text-muted)] font-mono text-sm">┌─────────────────────────────────────────┐</div>
+        <div class="px-6 py-3">│ &nbsp; <span class="text-[var(--text-dim)]">你的 AI 技术栈</span></div>
+        <div class="px-6 py-3 border-t border-[var(--border)] text-[var(--text-muted)] font-mono text-sm">├─────────────────────────────────────────┤</div>
+        <div class="px-6 py-3 flex items-center gap-2">│ &nbsp; <span class="text-[var(--accent)]">控制层</span>:  OpenClaw (41篇)</div>
+        <div class="px-6 py-3 flex items-center gap-2 border-t border-[var(--border)]">│ &nbsp; <span class="text-[var(--mint)]">自动化</span>:  Playwright + AI (40篇)</div>
+        <div class="px-6 py-3 flex items-center gap-2 border-t border-[var(--border)]">│ &nbsp; <span class="text-[var(--amber)]">测试</span>:    AI 测试工程 (37篇)</div>
+        <div class="px-6 py-3 flex items-center gap-2 border-t border-[var(--border)]">│ &nbsp; <span class="text-[var(--text)]">编程</span>:    Claude Code / OpenCode (23篇)</div>
+        <div class="px-6 py-3 flex items-center gap-2 border-t border-[var(--border)]">│ &nbsp; <span class="text-[var(--text)]">浏览器</span>:  Browser-Use / Stagehand (27篇)</div>
+        <div class="px-6 py-3 flex items-center gap-2 border-t border-[var(--border)]">│ &nbsp; <span class="text-[var(--text)]">变现</span>:    投资 & 电商 (36篇)</div>
+        <div class="px-6 py-3 flex items-center gap-2 border-t border-[var(--border)]">│ &nbsp; <span class="text-[var(--text)]">框架</span>:    Hermes Agent (10篇)</div>
+        <div class="bg-[var(--bg-secondary)] px-6 py-3 border-t border-[var(--border)] text-[var(--text-muted)] font-mono text-sm">└─────────────────────────────────────────┘</div>
+      </div>
+    </section>
+
+    <!-- Section 5: 洞察 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">📌 关键发现</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] card-hover">
+          <h3 class="font-semibold mb-2">🦞 OpenClaw 是核心工具</h3>
+          <p class="text-[var(--text-dim)] text-sm">41 篇覆盖安装→实战→进阶，已形成完整学习路径</p>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] card-hover">
+          <h3 class="font-semibold mb-2">🧪 AI 自动化测试是主线</h3>
+          <p class="text-[var(--text-dim)] text-sm">Playwright AI + 测试工程合计 77 篇，占总量 25%</p>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] card-hover">
+          <h3 class="font-semibold mb-2">🔴 内容质量分化明显</h3>
+          <p class="text-[var(--text-dim)] text-sm">部分文章因微信反爬导致内容截断</p>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] card-hover">
+          <h3 class="font-semibold mb-2">📁 13 篇永久丢失</h3>
+          <p class="text-[var(--text-dim)] text-sm">微信公众号文章被删除，无法恢复</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: 建议 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">🎯 下一步建议</h2>
+      <div class="space-y-3">
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] flex items-start gap-4 card-hover">
+          <span class="text-2xl shrink-0">🎯</span>
+          <div>
+            <h3 class="font-semibold">优先深化：AI 自动化测试</h3>
+            <p class="text-[var(--text-dim)] text-sm mt-1">Playwright AI + 测试工程方向是最强积累区</p>
+          </div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] flex items-start gap-4 card-hover">
+          <span class="text-2xl shrink-0">📈</span>
+          <div>
+            <h3 class="font-semibold">补齐短板：浏览器自动化</h3>
+            <p class="text-[var(--text-dim)] text-sm mt-1">Midscene、Browser-Use 可扩展</p>
+          </div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] flex items-start gap-4 card-hover">
+          <span class="text-2xl shrink-0">🔄</span>
+          <div>
+            <h3 class="font-semibold">定期重编 Wiki</h3>
+            <p class="text-[var(--text-dim)] text-sm mt-1">每次新增 20+ 篇后重新编译</p>
+          </div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] flex items-start gap-4 card-hover">
+          <span class="text-2xl shrink-0">🏷️</span>
+          <div>
+            <h3 class="font-semibold">统一标签体系</h3>
+            <p class="text-[var(--text-dim)] text-sm mt-1">后续采集统一使用新分类</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer note -->
+    <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-secondary)] text-center text-[var(--text-muted)] text-sm">
+      📊 报告由 Hermes Agent 自动生成 | 下次运行建议：新增 50 篇后重新分析
+    </div>
+  </div>
+</BaseLayout>

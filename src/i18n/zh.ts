@@ -5,6 +5,7 @@ export const translations = {
     about: '系统',
     projects: '技能',
     blog: '知识库',
+    report: '分析报告',
   },
 
   // ===== 底部 =====
@@ -225,6 +226,18 @@ export const translations = {
         desc: 'Philips Hue 灯光控制',
       },
     ],
+  },
+
+  // ===== 分析报告 =====
+  report: {
+    title: '📊 知识库全景分析报告',
+    subtitle: '308 篇素材 · 13 个分类 · 全量数据分析',
+    generated: '生成时间',
+    dataSource: '00_Inbox/ 全量 308 篇素材',
+    scope: '13 个主题分类',
+    overview: '概览',
+    metrics: '指标',
+    value: '数值',
   },
 
   // ===== 知识库 =====
