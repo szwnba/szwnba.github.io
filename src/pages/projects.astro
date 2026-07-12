@@ -6,7 +6,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
   <div class="max-w-4xl mx-auto px-6 py-12">
     <h1 class="text-4xl font-bold mb-2 text-center" data-i18n="projects.title">技能与工具 🛠️</h1>
     <p class="text-[var(--text-dim)] text-center mb-12" data-i18n="projects.subtitle">
-      已安装的 73 个技能，覆盖 13 个类别。点击查看详情。
+      已安装的 45 个技能（其中 6 个自主开发），覆盖 9 个类别。已清理 28 个闲置技能。
     </p>
 
     <div data-skills-grid class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
@@ -15,35 +15,27 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 
 <script>
   const SKILLS_ZH = [
-    { emoji: '🤖', name: '自主 AI Agent', skills: 'Claude Code, Codex, Hermes Agent, OpenCode', desc: '编码代理编排与任务委派', count: 4 },
-    { emoji: '🎨', name: '创意生成', skills: 'ASCII Art, Excalidraw, p5.js, Manim, ComfyUI, Baoyu 等', desc: 'ASCII 艺术、架构图、手绘风格、3D 动画、图像生成', count: 13 },
-    { emoji: '📊', name: '数据科学', skills: 'Hybrid Web Scraper, Jupyter', desc: '网页采集 + 交互式数据分析', count: 2 },
-    { emoji: '🐙', name: 'GitHub 工作流', skills: 'Code Review, PR Workflow, Issues, Auth, Repo Mgmt 等', desc: '完整的 GitHub 操作链：审查、合并、管理', count: 6 },
-    { emoji: '🎵', name: '媒体处理', skills: 'YouTube Transcript, GIF Search, HeartMuLa, Songsee', desc: '音视频内容提取与生成', count: 4 },
-    { emoji: '🧬', name: 'MLOps', skills: 'llama.cpp, vLLM, HuggingFace Hub, lm-eval, W&B, SAM 等', desc: '模型推理、评估、部署全套工具链', count: 7 },
-    { emoji: '📝', name: '笔记管理', skills: 'Obsidian', desc: '知识库读写查询', count: 1 },
-    { emoji: '⚡', name: '生产力工具', skills: 'Airtable, Google Workspace, Intel Agent, Maps, PDF, Notion, PPT 等', desc: '办公自动化、文档处理、智能体构建', count: 10 },
-    { emoji: '🔬', name: '研究与情报', skills: 'arXiv, Blogwatcher, last30days, LLM Wiki, Polymarket 等', desc: '学术搜索、博客监控、多平台调研', count: 7 },
-    { emoji: '💻', name: '软件开发', skills: 'Debugger, TDD, Code Review, Plan, Spike, Simplifier 等', desc: '开发全流程：调试、测试、计划、简化', count: 8 },
-    { emoji: '📧', name: '邮件', skills: 'Himalaya CLI', desc: 'IMAP/SMTP 终端邮件', count: 1 },
-    { emoji: '🐦', name: '社交媒体', skills: 'xurl (X/Twitter)', desc: 'Twitter v2 API 发布与搜索', count: 1 },
-    { emoji: '💡', name: '智能家居', skills: 'OpenHue', desc: 'Philips Hue 灯光控制', count: 1 },
+    { emoji: '🏆', name: '自主开发', skills: 'hybrid-web-scraper, intelligence-agent-builder, knowledge-base-utilization, todoist, obsidian-bookmark-import, github-repo-audit', desc: '自研核心技能：网页采集、情报监控、知识库分析、任务管理', count: 6 },
+    { emoji: '🛠️', name: '核心集成', skills: 'hermes-agent, obsidian, opencode, jupyter-live-kernel, google-workspace, arxiv, blogwatcher, last30days, dogfood', desc: '日常依赖：Hermes 框架、笔记、编码代理、数据分析、研究', count: 9 },
+    { emoji: '🐙', name: 'GitHub', skills: 'repo-management, github-auth, codebase-inspection, code-review, issues, pr-workflow', desc: '仓库管理、身份认证、代码审查、Issue/PR 工作流', count: 6 },
+    { emoji: '🔬', name: '研究与情报', skills: 'blogwatcher, arxiv, last30days, llm-wiki, polymarket', desc: '博客监控、论文搜索、跨平台调研、知识维基', count: 5 },
+    { emoji: '💻', name: '开发工具', skills: 'plan, spike, simplify-code, systematic-debugging, tdd, python-debugpy, skill-authoring, code-review-request', desc: '规划、实验、简化、调试、测试全流程工具', count: 8 },
+    { emoji: '⚡', name: '生产力', skills: 'nano-pdf, notion, powerpoint, popular-web-designs, kanban', desc: 'PDF 编辑、笔记、演示文稿、设计系统模板', count: 5 },
+    { emoji: '🎨', name: '设计', skills: 'popular-web-designs', desc: '54 个真实设计系统（Stripe, Linear, Vercel）', count: 1 },
+    { emoji: '🌐', name: '多平台', skills: 'yuanbao, xurl, evaluating-llms-harness', desc: '飞书集成、Twitter API、LLM 评估基准', count: 3 },
+    { emoji: '📦', name: '默认 Profile（可删）', skills: 'claude-code, codex, serving-llms-vllm, audiocraft, segment-anything', desc: '内置但在 collector profile 不可用，待清理', count: 5 },
   ]
 
   const SKILLS_EN = [
-    { emoji: '🤖', name: 'Autonomous AI Agents', skills: 'Claude Code, Codex, Hermes Agent, OpenCode', desc: 'Coding agent orchestration & task delegation', count: 4 },
-    { emoji: '🎨', name: 'Creative Generation', skills: 'ASCII Art, Excalidraw, p5.js, Manim, ComfyUI, Baoyu + more', desc: 'ASCII art, arch diagrams, hand-drawn, 3D animation', count: 13 },
-    { emoji: '📊', name: 'Data Science', skills: 'Hybrid Web Scraper, Jupyter', desc: 'Web scraping + interactive data analysis', count: 2 },
-    { emoji: '🐙', name: 'GitHub Workflows', skills: 'Code Review, PR Workflow, Issues, Auth, Repo Mgmt + more', desc: 'Full GitHub ops chain: review, merge, manage', count: 6 },
-    { emoji: '🎵', name: 'Media Processing', skills: 'YouTube Transcript, GIF Search, HeartMuLa, Songsee', desc: 'Audio/video extraction and generation', count: 4 },
-    { emoji: '🧬', name: 'MLOps', skills: 'llama.cpp, vLLM, HuggingFace Hub, lm-eval, W&B, SAM + more', desc: 'Model inference, evaluation, deployment', count: 7 },
-    { emoji: '📝', name: 'Note Taking', skills: 'Obsidian', desc: 'Knowledge base read/write/query', count: 1 },
-    { emoji: '⚡', name: 'Productivity', skills: 'Airtable, GWS, Intel Agent, Maps, PDF, Notion, PPT + more', desc: 'Office automation, document processing', count: 10 },
-    { emoji: '🔬', name: 'Research & Intel', skills: 'arXiv, Blogwatcher, last30days, LLM Wiki, Polymarket + more', desc: 'Academic search, blog monitoring, research', count: 7 },
-    { emoji: '💻', name: 'Software Dev', skills: 'Debugger, TDD, Code Review, Plan, Spike, Simplifier + more', desc: 'Full dev cycle: debug, test, plan, simplify', count: 8 },
-    { emoji: '📧', name: 'Email', skills: 'Himalaya CLI', desc: 'IMAP/SMTP terminal email', count: 1 },
-    { emoji: '🐦', name: 'Social Media', skills: 'xurl (X/Twitter)', desc: 'Twitter v2 API posting & search', count: 1 },
-    { emoji: '💡', name: 'Smart Home', skills: 'OpenHue', desc: 'Philips Hue light control', count: 1 },
+    { emoji: '🏆', name: 'Custom Built', skills: 'hybrid-web-scraper, intelligence-agent-builder, knowledge-base-utilization, todoist, obsidian-bookmark-import, github-repo-audit', desc: 'Self-developed: web scraping, intel monitoring, KB analysis, task mgmt', count: 6 },
+    { emoji: '🛠️', name: 'Core Integration', skills: 'hermes-agent, obsidian, opencode, jupyter-live-kernel, google-workspace, arxiv, blogwatcher, last30days, dogfood', desc: 'Daily drivers: Hermes, notes, coding agents, research', count: 9 },
+    { emoji: '🐙', name: 'GitHub', skills: 'repo-management, github-auth, codebase-inspection, code-review, issues, pr-workflow', desc: 'Repo mgmt, auth, code review, issues & PR workflows', count: 6 },
+    { emoji: '🔬', name: 'Research & Intel', skills: 'blogwatcher, arxiv, last30days, llm-wiki, polymarket', desc: 'Blog monitoring, paper search, multi-platform research', count: 5 },
+    { emoji: '💻', name: 'Dev Tools', skills: 'plan, spike, simplify-code, systematic-debugging, tdd, python-debugpy, skill-authoring, code-review-request', desc: 'Planning, experiments, debugging, testing toolchain', count: 8 },
+    { emoji: '⚡', name: 'Productivity', skills: 'nano-pdf, notion, powerpoint, popular-web-designs, kanban', desc: 'PDF editing, notes, presentations, design templates', count: 5 },
+    { emoji: '🎨', name: 'Design', skills: 'popular-web-designs', desc: '54 real design systems (Stripe, Linear, Vercel)', count: 1 },
+    { emoji: '🌐', name: 'Multi-Platform', skills: 'yuanbao, xurl, evaluating-llms-harness', desc: 'Feishu, Twitter API, LLM evaluation benchmarks', count: 3 },
+    { emoji: '📦', name: 'Default Profile (cleanup)', skills: 'claude-code, codex, serving-llms-vllm, audiocraft, segment-anything', desc: 'Bundled but unavailable in collector profile, pending cleanup', count: 5 },
   ]
 
   function renderSkills(items: typeof SKILLS_ZH) {

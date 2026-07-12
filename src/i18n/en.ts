@@ -55,7 +55,7 @@ export const translations = {
       first: 'Knowledge Base: 332 articles, 12 categories, 2.6 MB',
       second: 'GitHub: 89 repos (24 private / 65 public)',
       third: 'Cron: 4 automation jobs executing daily',
-      fourth: 'Skills: 73 available across 13 categories',
+      fourth: 'Skills: 45 available (6 custom built), 9 categories',
       fifth: 'Platforms: Feishu + GitHub + Obsidian',
       sixth: 'Last updated: 2026-07-12 · Live ⚡',
     },
