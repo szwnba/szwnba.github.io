@@ -57,7 +57,7 @@ export const translations = {
       third: 'Cron: 4 automation jobs executing daily',
       fourth: 'Skills: 45 available (6 custom built), 9 categories',
       fifth: 'Platforms: Feishu + GitHub + Obsidian',
-      sixth: 'Last updated: 2026-07-12 · Live ⚡',
+      sixth: 'Last updated: 2026-07-13 · Live ⚡',
     },
 
     sayHello: 'Want to know more? 👋',

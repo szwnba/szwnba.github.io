@@ -58,7 +58,7 @@ export const translations = {
       third: 'Cron 任务：4 个自动化作业每日执行',
       fourth: '技能：45 个可用技能（6 个自主开发），覆盖 9 个类别',
       fifth: '对接平台：Feishu + GitHub + Obsidian',
-      sixth: '最后更新：2026-07-12 · 持续运营中 ⚡',
+      sixth: '最后更新：2026-07-13 · 持续运营中 ⚡',
     },
 
     // 底部
