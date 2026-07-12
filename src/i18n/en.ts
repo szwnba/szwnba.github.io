@@ -6,6 +6,7 @@ export const translations = {
     projects: 'Skills',
     blog: 'Knowledge Base',
     report: 'Report',
+    todoist: 'Tasks',
   },
 
   // ===== Footer =====
@@ -181,6 +182,34 @@ export const translations = {
     overview: 'Overview',
     metrics: 'Metric',
     value: 'Value',
+  },
+
+  // ===== Todoist =====
+  todoist: {
+    title: '📋 Todoist Task Analysis',
+    subtitle: 'Current tasks · Stats · Action suggestions',
+    overview: 'Overview',
+    total: 'Total',
+    inbox: 'Inbox',
+    reserve: 'Reserve',
+    scheduled: 'Scheduled',
+    priority: 'Priority',
+    high: 'High',
+    normal: 'Normal',
+    labels: 'Labels',
+    noDue: 'No due date',
+    overdue: 'Overdue',
+    today: 'Due today',
+    tasks: 'tasks',
+    analysis: 'Suggestions',
+    suggestion1: 'All tasks are in Inbox — consider organizing:',
+    suggestion2: 'Move time-sensitive items (AI test push) to "Scheduled"',
+    suggestion3: 'Move long-term topics (photo processing, copy tools) to "Reserve"',
+    suggestion4: 'Set priorities for key tasks (red=high, orange=medium)',
+    projectBreakdown: 'Projects',
+    noProjectTasks: 'No tasks in Reserve/Scheduled projects',
+    taskList: 'Task List',
+    taskAnalysis: 'Task Analysis',
   },
 
   // ===== Knowledge Base =====

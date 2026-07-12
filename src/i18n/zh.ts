@@ -6,6 +6,7 @@ export const translations = {
     projects: '技能',
     blog: '知识库',
     report: '分析报告',
+    todoist: '任务',
   },
 
   // ===== 底部 =====
@@ -248,6 +249,34 @@ export const translations = {
     backToBlog: '← 返回知识库',
     backToAll: '← 返回全部',
     share: '分享：',
+  },
+
+  // ===== 任务分析 =====
+  todoist: {
+    title: '📋 Todoist 任务分析',
+    subtitle: '当前待办 · 分类统计 · 执行建议',
+    overview: '任务概览',
+    total: '总任务',
+    inbox: '收集箱',
+    reserve: '储备任务',
+    scheduled: '定时任务',
+    priority: '优先级分布',
+    high: '高',
+    normal: '普通',
+    labels: '标签',
+    noDue: '无截止日',
+    overdue: '已逾期',
+    today: '今天到期',
+    tasks: '个任务',
+    analysis: '分析建议',
+    suggestion1: '当前所有任务都在「收集箱」中，建议分类整理：',
+    suggestion2: '将「AI 测试」等有明确时间节点的移到「定时任务」',
+    suggestion3: '将「照片处理」「文案工具」等长期课题移到「储备任务」',
+    suggestion4: '给关键任务设置优先级（红色=高、橙色=中）',
+    projectBreakdown: '项目分布',
+    noProjectTasks: '储备/定时项目暂无任务',
+    taskList: '任务清单',
+    taskAnalysis: '任务分析',
   },
 
   // ===== 404 =====

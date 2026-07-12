@@ -91,6 +91,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
               data-i18n="nav.report"
               >{t('nav.report', pageLang)}</a
             >
+            <a
+              href="/todoist"
+              class="text-[var(--text-dim)] hover:text-[var(--accent)] transition-colors link-underline"
+              data-i18n="nav.todoist"
+              >{t('nav.todoist', pageLang)}</a
+            >
             <LanguageSwitcher />
             <ThemeToggle />
           </div>
@@ -147,6 +153,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
           'nav.projects': '技能',
           'nav.blog': '知识库',
           'nav.report': '分析报告',
+          'nav.todoist': '任务',
           'footer.madeWith': 'szwnba 的采集系统 · Hermes Agent v0.17.0 ⚡',
           'footer.rightsReserved': '© ' + new Date().getFullYear() + ' szwnba.github.io',
         },
@@ -156,6 +163,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
           'nav.projects': 'Skills',
           'nav.blog': 'KB',
           'nav.report': 'Report',
+          'nav.todoist': 'Tasks',
           'footer.madeWith': "szwnba's Collector System · Hermes Agent v0.17.0 ⚡",
           'footer.rightsReserved': '© ' + new Date().getFullYear() + ' szwnba.github.io',
         },

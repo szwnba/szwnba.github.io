@@ -1,0 +1,207 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { t, DEFAULT_LANG, type Lang } from '../../i18n'
+
+const pageLang: Lang = DEFAULT_LANG
+
+// — 任务数据（硬编码，由 kb_sync.py 定期更新） —
+const projects = [
+  { id: '6CrfQpMFrw9RJ6GW', name: '收集箱', emoji: '📥', count: 9 },
+  { id: '6gGF3gCcp4X2X7J6', name: '储备任务', emoji: '📦', count: 0 },
+  { id: '6gGFMCm3qWFqPwQJ', name: '定时任务', emoji: '⏰', count: 0 },
+]
+
+const tasks = [
+  { content: 'GitHub issue 文章做个漂亮的网站，AI 日常分析我的 GitHub issue 文章', priority: 1, due: '', project: 'inbox' },
+  { content: '文章生成系统，全自动生成内容', priority: 1, due: '', project: 'inbox' },
+  { content: 'AI 测试前沿公众号自动推送更新', priority: 1, due: '2026-07-06', project: 'inbox', overdue: true },
+  { content: '需求…知乎收藏的找小众长尾提示词，建立站优化SEO', priority: 1, due: '', project: 'inbox' },
+  { content: '在线爆款文案 - 优优工具', priority: 1, due: '', project: 'inbox' },
+  { content: '自动化工厂：文章，图片，视频自动化', priority: 1, due: '', project: 'inbox' },
+  { content: '照片自动处理 AI 软件', priority: 1, due: '', project: 'inbox' },
+  { content: '需求～获取X推特和Reddit上有价值的信息，如套利交易，热门科技', priority: 1, due: '', project: 'inbox' },
+  { content: '分析我的affiliate邮箱文章，提炼精华日报', priority: 1, due: '', project: 'inbox' },
+]
+
+const labels = [
+  { name: 'home', color: 'yellow' },
+  { name: 'outside', color: 'light_blue' },
+  { name: '待办', color: 'blue' },
+  { name: '想法', color: 'yellow' },
+  { name: '工作', color: 'red' },
+]
+---
+
+<BaseLayout
+  title={`${t('todoist.title', pageLang)}`}
+  description={t('todoist.subtitle', pageLang)}
+  pageLang={pageLang}
+>
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    <!-- Header -->
+    <header class="mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">{t('todoist.title', pageLang)}</h1>
+      <p class="text-[var(--text-dim)] mb-6">{t('todoist.subtitle', pageLang)}</p>
+    </header>
+
+    <!-- Overview Cards -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-6">{t('todoist.overview', pageLang)}</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] text-center card-hover">
+          <div class="text-3xl mb-2">📋</div>
+          <div class="text-3xl font-bold text-[var(--accent)]">9</div>
+          <div class="text-sm text-[var(--text-muted)]">{t('todoist.tasks', pageLang)}</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] text-center card-hover">
+          <div class="text-3xl mb-2">📥</div>
+          <div class="text-3xl font-bold text-[var(--amber)]">9</div>
+          <div class="text-sm text-[var(--text-muted)]">{t('todoist.inbox', pageLang)}</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] text-center card-hover">
+          <div class="text-3xl mb-2">📦</div>
+          <div class="text-3xl font-bold text-[var(--text-muted)]">0</div>
+          <div class="text-sm text-[var(--text-muted)]">{t('todoist.reserve', pageLang)}</div>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] text-center card-hover">
+          <div class="text-3xl mb-2">⏰</div>
+          <div class="text-3xl font-bold text-[var(--text-muted)]">0</div>
+          <div class="text-sm text-[var(--text-muted)]">{t('todoist.scheduled', pageLang)}</div>
+        </div>
+      </div>
+
+      <!-- Priority distribution -->
+      <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] mb-6">
+        <h3 class="font-semibold mb-4">{t('todoist.priority', pageLang)}</h3>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="w-12 text-sm">🔴 P1</span>
+            <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-6 overflow-hidden">
+              <div class="bg-red-500 h-full rounded-full flex items-center justify-end pr-3 text-xs font-bold text-white" style="width:0%">0</div>
+            </div>
+            <span class="w-8 text-right text-sm text-[var(--text-muted)]">0</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-12 text-sm">🟠 P2</span>
+            <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-6 overflow-hidden">
+              <div class="bg-orange-500 h-full rounded-full flex items-center justify-end pr-3 text-xs font-bold text-white" style="width:0%">0</div>
+            </div>
+            <span class="w-8 text-right text-sm text-[var(--text-muted)]">0</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-12 text-sm">🔵 P3</span>
+            <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-6 overflow-hidden">
+              <div class="bg-blue-500 h-full rounded-full flex items-center justify-end pr-3 text-xs font-bold text-white" style="width:0%">0</div>
+            </div>
+            <span class="w-8 text-right text-sm text-[var(--text-muted)]">0</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-12 text-sm">⚪ P4</span>
+            <div class="flex-1 bg-[var(--bg-tertiary)] rounded-full h-6 overflow-hidden">
+              <div class="bg-[var(--text-muted)] h-full rounded-full flex items-center justify-end pr-3 text-xs font-bold text-white" style="width:100%">9</div>
+            </div>
+            <span class="w-8 text-right text-sm text-[var(--text-muted)]">9</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Labels -->
+      <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)]">
+        <h3 class="font-semibold mb-4">{t('todoist.labels', pageLang)}</h3>
+        <div class="flex flex-wrap gap-2">
+          {labels.map((label) => {
+            const colorMap = {
+              yellow: 'bg-yellow-500/20 text-yellow-300 border-yellow-500/30',
+              light_blue: 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30',
+              blue: 'bg-blue-500/20 text-blue-300 border-blue-500/30',
+              red: 'bg-red-500/20 text-red-300 border-red-500/30',
+            }
+            return (
+              <span class={`px-3 py-1.5 rounded-full text-xs border ${colorMap[label.color] || 'bg-gray-500/20 text-gray-300 border-gray-500/30'}`}>
+                {label.name}
+              </span>
+            )
+          })}
+        </div>
+      </div>
+    </section>
+
+    <!-- Task Analysis -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-6">{t('todoist.taskAnalysis', pageLang)}</h2>
+
+      <!-- Insights -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="border border-red-500/30 rounded-xl p-5 bg-red-500/5 card-hover">
+          <h3 class="font-semibold mb-2 text-red-400">⚠️ {t('todoist.overdue', pageLang)}</h3>
+          <p class="text-sm text-[var(--text-dim)]">「AI 测试前沿公众号自动推送更新」已逾期（截止 2026-07-06）</p>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] card-hover">
+          <h3 class="font-semibold mb-2">📋 100% {t('todoist.noDue', pageLang)}</h3>
+          <p class="text-sm text-[var(--text-dim)]">9 个任务中 8 个没有截止日期，缺乏时间管理</p>
+        </div>
+        <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-card)] card-hover">
+          <h3 class="font-semibold mb-2">📥 {t('todoist.inbox', pageLang)}</h3>
+          <p class="text-sm text-[var(--text-dim)]">所有 9 个任务全在收集箱，未归类整理</p>
+        </div>
+        <div class="border border-yellow-500/30 rounded-xl p-5 bg-yellow-500/5 card-hover">
+          <h3 class="font-semibold mb-2 text-yellow-400">🏷️ {t('todoist.labels', pageLang)}</h3>
+          <p class="text-sm text-[var(--text-dim)]">已有 5 个标签可用但未应用到任何任务上</p>
+        </div>
+      </div>
+
+      <!-- AI Suggestions -->
+      <div class="border border-[var(--accent)]/30 rounded-xl p-6 bg-[var(--accent)]/5 mb-8">
+        <h3 class="font-semibold text-lg mb-4 flex items-center gap-2">
+          <span>🤖</span> {t('todoist.analysis', pageLang)}
+        </h3>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3 text-sm">
+            <span class="text-[var(--accent)] mt-0.5 shrink-0">①</span>
+            <span>{t('todoist.suggestion1', pageLang)}</span>
+          </li>
+          <li class="flex items-start gap-3 text-sm">
+            <span class="text-[var(--mint)] mt-0.5 shrink-0">②</span>
+            <span>{t('todoist.suggestion2', pageLang)}</span>
+          </li>
+          <li class="flex items-start gap-3 text-sm">
+            <span class="text-[var(--amber)] mt-0.5 shrink-0">③</span>
+            <span>{t('todoist.suggestion3', pageLang)}</span>
+          </li>
+          <li class="flex items-start gap-3 text-sm">
+            <span class="text-red-400 mt-0.5 shrink-0">④</span>
+            <span>{t('todoist.suggestion4', pageLang)}</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Task List -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-6">{t('todoist.taskList', pageLang)}</h2>
+      <div class="space-y-2">
+        {tasks.map((task, i) => {
+          const priorityEmoji = ['⚪', '🔵', '🟠', '🔴']
+          return (
+            <div class={`flex items-center gap-3 border rounded-lg p-3 card-hover ${
+              task.overdue ? 'border-red-500/30 bg-red-500/5' : 'border-[var(--border)] bg-[var(--bg-card)]'
+            }`}>
+              <span class="text-lg shrink-0">{priorityEmoji[task.priority - 1]}</span>
+              <span class="text-sm text-[var(--text-dim)] flex-1">{task.content}</span>
+              <div class="flex items-center gap-2 shrink-0">
+                {task.overdue && <span class="text-xs text-red-400 font-semibold">⚠️ {t('todoist.overdue', pageLang)}</span>}
+                {!task.due && <span class="text-xs text-[var(--text-muted)]">📅 --</span>}
+                {task.due && !task.overdue && <span class="text-xs text-[var(--text-muted)]">📅 {task.due}</span>}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </section>
+
+    <!-- Footer note -->
+    <div class="border border-[var(--border)] rounded-xl p-5 bg-[var(--bg-secondary)] text-center text-[var(--text-muted)] text-sm">
+      🔄 数据由 obsidian_kb 每 6 小时自动同步 | 最后更新: {new Date().toISOString().slice(0, 10)}
+    </div>
+  </div>
+</BaseLayout>
