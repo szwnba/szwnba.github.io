@@ -1,7 +1,8 @@
 {
-  "name": "maudeco-astro",
+  "name": "collector-dashboard",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "szwnba 的采集系统仪表盘 — 知识库、技能、Cron 自动化",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

@@ -2,14 +2,14 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<BaseLayout title="404 - Maude 🐄">
+<BaseLayout title="404 - szwnba Collector">
   <div class="max-w-2xl mx-auto px-6 py-16 text-center">
-    <div class="text-8xl mb-6">🐄</div>
+    <div class="text-8xl mb-6">🔍</div>
     <h1 class="text-5xl font-bold mb-4" data-i18n="notFound.title">
-      404 —— 没找到 🐄
+      404 —— 页面未找到 🔍
     </h1>
     <p class="text-[var(--text-dim)] text-lg mb-8" data-i18n="notFound.subtitle">
-      嗯…… 这片牧场是空的。
+      嗯... 这里的文章还没被采集到。
     </p>
     <a href="/" class="inline-block text-[var(--accent)] hover:underline font-medium text-lg" data-i18n="notFound.back">
       回到首页 →
@@ -19,13 +19,13 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 
 <script>
   const NF_ZH: Record<string, string> = {
-    'notFound.title': '404 —— 没找到 🐄',
-    'notFound.subtitle': '嗯…… 这片牧场是空的。',
+    'notFound.title': '404 —— 页面未找到 🔍',
+    'notFound.subtitle': '嗯... 这里的文章还没被采集到。',
     'notFound.back': '回到首页 →',
   }
   const NF_EN: Record<string, string> = {
-    'notFound.title': '404 — Not found 🐄',
-    'notFound.subtitle': 'Well... this pasture is empty.',
+    'notFound.title': '404 — Page not found 🔍',
+    'notFound.subtitle': "Hmm... this article hasn't been collected yet.",
     'notFound.back': 'Back to home →',
   }
 

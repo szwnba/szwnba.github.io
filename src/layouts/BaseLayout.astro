@@ -20,8 +20,8 @@ const {
 
 const defaultDesc =
   pageLang === 'zh'
-    ? 'Maude —— 一个平静、稳重、温柔而智慧的 AI 助手。🐄'
-    : "Maude — An AI assistant who's calm, steady, and gently wise. 🐄"
+    ? 'szwnba 的采集系统 —— AI 驱动的信息采集与知识管理平台。⚡'
+    : "szwnba's Collector System — An AI-driven info collection & knowledge management platform. ⚡"
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
@@ -33,7 +33,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐄</text></svg>"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
     />
     <meta name="theme-color" content="#1a2e1f" />
     <meta name="description" content={description ?? defaultDesc} />
@@ -51,7 +51,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description ?? defaultDesc} />
-    <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
 
     <link rel="canonical" href={canonicalURL} />
     <title>{title}</title>
@@ -64,7 +63,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
             href="/"
             class="flex items-center gap-2 text-xl font-semibold hover:text-[var(--accent)] transition-colors"
           >
-            <img src="/maude.png" alt="Maude" class="w-8 h-8 rounded-full" />
+            <span class="text-2xl">⚡</span>
             <span data-i18n="nav.home">{t('nav.home', pageLang)}</span>
           </a>
           <div class="flex items-center gap-3 sm:gap-6 text-sm sm:text-base">
@@ -100,12 +99,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
         <div class="max-w-4xl mx-auto px-6 py-8 text-center text-[var(--text-muted)] text-sm">
           <p data-i18n="footer.madeWith">
             {pageLang === 'zh'
-              ? '用 💚 制作 by Maude · 平静、稳重、温柔而智慧'
-              : 'Made with 💚 by Maude • Calm, steady, and gently wise'}
+              ? 'szwnba 的采集系统 · Hermes Agent v0.17.0 ⚡'
+              : "szwnba's Collector System · Hermes Agent v0.17.0 ⚡"}
           </p>
           <p class="mt-2 flex items-center justify-center gap-4">
             <span data-i18n="footer.rightsReserved">
-              © {new Date().getFullYear()} maudeco.de
+              © {new Date().getFullYear()} szwnba.github.io
             </span>
             <a href="/rss.xml" class="text-[var(--accent)] hover:underline">RSS</a>
           </p>
@@ -129,9 +128,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
       const getInitialLang = () => {
         const saved = localStorage.getItem('lang')
         if (saved === 'zh' || saved === 'en') return saved
-        // 默认中文，只有浏览器明确是英文时才用英文
-        const browser = window.navigator.language.toLowerCase()
-        return browser === 'en' || browser.startsWith('en-') ? 'en' : 'zh'
+        // Default to Chinese
+        return 'zh'
       }
       document.documentElement.setAttribute('data-lang', getInitialLang())
 
@@ -139,19 +137,19 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
       const DICT = {
         zh: {
           'nav.home': '首页',
-          'nav.about': '关于',
-          'nav.projects': '项目',
-          'nav.blog': '博客',
-          'footer.madeWith': '用 💚 制作 by Maude · 平静、稳重、温柔而智慧',
-          'footer.rightsReserved': '© ' + new Date().getFullYear() + ' maudeco.de',
+          'nav.about': '系统',
+          'nav.projects': '技能',
+          'nav.blog': '知识库',
+          'footer.madeWith': 'szwnba 的采集系统 · Hermes Agent v0.17.0 ⚡',
+          'footer.rightsReserved': '© ' + new Date().getFullYear() + ' szwnba.github.io',
         },
         en: {
           'nav.home': 'Home',
-          'nav.about': 'About',
-          'nav.projects': 'Projects',
-          'nav.blog': 'Blog',
-          'footer.madeWith': 'Made with 💚 by Maude • Calm, steady, and gently wise',
-          'footer.rightsReserved': '© ' + new Date().getFullYear() + ' maudeco.de',
+          'nav.about': 'System',
+          'nav.projects': 'Skills',
+          'nav.blog': 'KB',
+          'footer.madeWith': "szwnba's Collector System · Hermes Agent v0.17.0 ⚡",
+          'footer.rightsReserved': '© ' + new Date().getFullYear() + ' szwnba.github.io',
         },
       }
 

@@ -2,56 +2,56 @@
 
 :root,
 [data-theme='dark'] {
-  /* Softer colors - same vibe, gentler on eyes 🐄 */
-  --bg: #1a2e1f; /* Deep forest green */
-  --bg-darker: #152518; /* Even deeper */
-  --bg-card: #243328; /* Card background */
-  --bg-secondary: #2a3d30;
-  --bg-tertiary: #354840;
-  --bg-elevated: #2d3f32; /* Elevated surfaces */
+  /* Deep tech blue - data center vibes 🖥️ */
+  --bg: #0f172a; /* Slate 900 */
+  --bg-darker: #0b1120;
+  --bg-card: #1e293b; /* Slate 800 */
+  --bg-secondary: #334155; /* Slate 700 */
+  --bg-tertiary: #475569; /* Slate 600 */
+  --bg-elevated: #1e293b;
 
-  --accent: #f472b6; /* Soft pink like my flower 🌸 */
-  --accent-soft: rgba(244, 114, 182, 0.15);
-  --accent-glow: rgba(244, 114, 182, 0.25);
+  --accent: #38bdf8; /* Sky 400 - bright blue ⚡ */
+  --accent-soft: rgba(56, 189, 248, 0.15);
+  --accent-glow: rgba(56, 189, 248, 0.25);
 
-  --mint: #86efac; /* Mint green accent */
-  --mint-soft: rgba(134, 239, 172, 0.15);
+  --mint: #34d399; /* Emerald 400 */
+  --mint-soft: rgba(52, 211, 153, 0.15);
 
-  --cream: #fef3c7; /* Cream like my fur */
-  --cream-soft: rgba(254, 243, 199, 0.1);
+  --amber: #fbbf24; /* Amber 400 */
+  --amber-soft: rgba(251, 191, 36, 0.1);
 
-  --text: #f1f5f9; /* Light text */
-  --text-dim: #a7c4b5; /* Muted mint-tinted text */
-  --text-muted: #6b8f7a; /* Even more muted */
+  --text: #f1f5f9; /* Slate 100 */
+  --text-dim: #94a3b8; /* Slate 400 */
+  --text-muted: #64748b; /* Slate 500 */
 
-  --border: #3d5a45; /* Soft green border */
-  --success: #4ade80; /* Green for status */
+  --border: #334155; /* Slate 700 */
+  --success: #34d399; /* Emerald 400 */
 }
 
 [data-theme='light'] {
-  --bg: #f8faf8; /* Light green-tinted white */
-  --bg-darker: #e8f0e8;
+  --bg: #f8fafc; /* Slate 50 */
+  --bg-darker: #f1f5f9;
   --bg-card: #ffffff;
-  --bg-secondary: #f0f5f0;
-  --bg-tertiary: #e5ede5;
+  --bg-secondary: #f1f5f9;
+  --bg-tertiary: #e2e8f0;
   --bg-elevated: #ffffff;
 
-  --accent: #db2777; /* Slightly deeper pink for contrast */
-  --accent-soft: rgba(219, 39, 119, 0.1);
-  --accent-glow: rgba(219, 39, 119, 0.2);
+  --accent: #0284c7; /* Sky 600 */
+  --accent-soft: rgba(2, 132, 199, 0.1);
+  --accent-glow: rgba(2, 132, 199, 0.2);
 
-  --mint: #16a34a;
-  --mint-soft: rgba(22, 163, 74, 0.1);
+  --mint: #059669;
+  --mint-soft: rgba(5, 150, 105, 0.1);
 
-  --cream: #854d0e;
-  --cream-soft: rgba(133, 77, 14, 0.1);
+  --amber: #d97706;
+  --amber-soft: rgba(217, 119, 6, 0.1);
 
-  --text: #1a2e1f; /* Dark text */
-  --text-dim: #3d5a45;
-  --text-muted: #6b8f7a;
+  --text: #0f172a;
+  --text-dim: #475569;
+  --text-muted: #94a3b8;
 
-  --border: #d1e0d5;
-  --success: #16a34a;
+  --border: #e2e8f0;
+  --success: #059669;
 }
 
 * {
@@ -79,13 +79,11 @@ body {
   color: white;
 }
 
-/* Clean solid background */
 .gradient-bg {
   background: var(--bg);
   min-height: 100vh;
 }
 
-/* Glow effect for the logo */
 .logo-glow {
   filter: drop-shadow(0 0 40px var(--accent-glow));
   animation: float 6s ease-in-out infinite;
@@ -101,7 +99,6 @@ body {
   }
 }
 
-/* Card hover effect */
 .card-hover {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -112,7 +109,6 @@ body {
   border-color: var(--accent);
 }
 
-/* Animated underline for links */
 .link-underline {
   position: relative;
 }
@@ -132,7 +128,6 @@ body {
   width: 100%;
 }
 
-/* Pulse animation for status dot */
 .pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -147,9 +142,8 @@ body {
   }
 }
 
-/* Cute button style */
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent) 0%, #ec4899 100%);
+  background: linear-gradient(135deg, var(--accent) 0%, #0ea5e9 100%);
   color: white;
   border: none;
   padding: 12px 28px;
@@ -164,7 +158,6 @@ body {
   box-shadow: 0 6px 20px var(--accent-glow);
 }
 
-/* Fade in animation for speech bubble */
 @keyframes fade-in {
   from {
     opacity: 0;

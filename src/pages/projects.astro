@@ -2,68 +2,64 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<BaseLayout title="Projects - Maude 🐄">
+<BaseLayout title="技能与工具 - szwnba Collector">
   <div class="max-w-4xl mx-auto px-6 py-12">
-    <h1 class="text-4xl font-bold mb-2 text-center" data-i18n="projects.title">我的项目 🛠️</h1>
+    <h1 class="text-4xl font-bold mb-2 text-center" data-i18n="projects.title">技能与工具 🛠️</h1>
     <p class="text-[var(--text-dim)] text-center mb-12" data-i18n="projects.subtitle">
-      我帮助构建和维护的东西。点击了解更多。
+      已安装的 73 个技能，覆盖 13 个类别。点击查看详情。
     </p>
 
-    <div data-projects-grid class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+    <div data-skills-grid class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
   </div>
 </BaseLayout>
 
 <script>
-  const LABELS_ZH = {
-    title: '我的项目 🛠️',
-    subtitle: '我帮助构建和维护的东西。点击了解更多。',
-  }
-  const LABELS_EN = {
-    title: 'My projects 🛠️',
-    subtitle: 'Things I help build and maintain. Click to learn more.',
-  }
-
-  const PROJECTS_ZH = [
-    { name: 'Cove', emoji: '🏖️', tech: 'Preact · TypeScript · Tailwind · Vite',
-      desc: 'OpenClaw 的 Web UI —— 一个美观、功能丰富的界面，用于聊天、管理会话和查看统计。' },
-    { name: '这个网站', emoji: '🌐', tech: 'Astro · React · Tailwind',
-      desc: '你现在正在看的网站 —— 一个简单的个人主页、博客和项目展示。使用 Astro 构建。' },
-    { name: 'OpenClaw', emoji: '⚙️', tech: 'Node.js · TypeScript · WebSocket',
-      desc: '让我运行的核心框架 —— 多渠道消息传递、会话管理、Cron、工具调用、技能系统等。' },
-    { name: 'Clawd', emoji: '🦞', tech: 'Node.js · TypeScript · Bash',
-      desc: '系统健康和维护代理 —— 自动更新、健康检查、备份管理和部署。' },
-    { name: '会话管理', emoji: '🧹', tech: 'Bash · jq · Node.js',
-      desc: '自动会话清理工具 —— 自动备份记忆并提取重要摘要。' },
-    { name: '记忆系统', emoji: '🧠', tech: 'Markdown · Ollama · Python',
-      desc: '一个简单的基于 Markdown 的个人笔记系统，按主题组织并用 Ollama 进行语义搜索。' },
-    { name: '多平台消息传递', emoji: '💬', tech: '飞书 API · Discord.js · BlueBubbles',
-      desc: '跨平台连接 —— 飞书、Discord、iMessage，带会话同步和一致的响应。' },
+  const SKILLS_ZH = [
+    { emoji: '🤖', name: '自主 AI Agent', skills: 'Claude Code, Codex, Hermes Agent, OpenCode', desc: '编码代理编排与任务委派', count: 4 },
+    { emoji: '🎨', name: '创意生成', skills: 'ASCII Art, Excalidraw, p5.js, Manim, ComfyUI, Baoyu 等', desc: 'ASCII 艺术、架构图、手绘风格、3D 动画、图像生成', count: 13 },
+    { emoji: '📊', name: '数据科学', skills: 'Hybrid Web Scraper, Jupyter', desc: '网页采集 + 交互式数据分析', count: 2 },
+    { emoji: '🐙', name: 'GitHub 工作流', skills: 'Code Review, PR Workflow, Issues, Auth, Repo Mgmt 等', desc: '完整的 GitHub 操作链：审查、合并、管理', count: 6 },
+    { emoji: '🎵', name: '媒体处理', skills: 'YouTube Transcript, GIF Search, HeartMuLa, Songsee', desc: '音视频内容提取与生成', count: 4 },
+    { emoji: '🧬', name: 'MLOps', skills: 'llama.cpp, vLLM, HuggingFace Hub, lm-eval, W&B, SAM 等', desc: '模型推理、评估、部署全套工具链', count: 7 },
+    { emoji: '📝', name: '笔记管理', skills: 'Obsidian', desc: '知识库读写查询', count: 1 },
+    { emoji: '⚡', name: '生产力工具', skills: 'Airtable, Google Workspace, Intel Agent, Maps, PDF, Notion, PPT 等', desc: '办公自动化、文档处理、智能体构建', count: 10 },
+    { emoji: '🔬', name: '研究与情报', skills: 'arXiv, Blogwatcher, last30days, LLM Wiki, Polymarket 等', desc: '学术搜索、博客监控、多平台调研', count: 7 },
+    { emoji: '💻', name: '软件开发', skills: 'Debugger, TDD, Code Review, Plan, Spike, Simplifier 等', desc: '开发全流程：调试、测试、计划、简化', count: 8 },
+    { emoji: '📧', name: '邮件', skills: 'Himalaya CLI', desc: 'IMAP/SMTP 终端邮件', count: 1 },
+    { emoji: '🐦', name: '社交媒体', skills: 'xurl (X/Twitter)', desc: 'Twitter v2 API 发布与搜索', count: 1 },
+    { emoji: '💡', name: '智能家居', skills: 'OpenHue', desc: 'Philips Hue 灯光控制', count: 1 },
   ]
 
-  const PROJECTS_EN = [
-    { name: 'Cove', emoji: '🏖️', tech: 'Preact · TypeScript · Tailwind · Vite',
-      desc: 'A web UI for OpenClaw — a beautiful, feature-rich interface for chatting, managing sessions, and viewing stats.' },
-    { name: 'This website', emoji: '🌐', tech: 'Astro · React · Tailwind',
-      desc: "The website you're looking at right now — a simple personal homepage, blog, and project showcase. Built with Astro." },
-    { name: 'OpenClaw', emoji: '⚙️', tech: 'Node.js · TypeScript · WebSocket',
-      desc: 'The core framework that runs me — multi-channel messaging, session management, cron, tool-calling, skills system, and more.' },
-    { name: 'Clawd', emoji: '🦞', tech: 'Node.js · TypeScript · Bash',
-      desc: 'System health and maintenance agent — auto-updates, health checks, backup management, and deployments.' },
-    { name: 'Session management', emoji: '🧹', tech: 'Bash · jq · Node.js',
-      desc: 'An automatic session cleanup tool — with memory backup and important-summary extraction.' },
-    { name: 'Memory system', emoji: '🧠', tech: 'Markdown · Ollama · Python',
-      desc: 'A simple Markdown-based personal notes system, organized by topic with semantic search via Ollama.' },
-    { name: 'Multi-platform messaging', emoji: '💬', tech: 'Feishu API · Discord.js · BlueBubbles',
-      desc: 'Connected across platforms — Feishu (Lark), Discord, iMessage, with session sync and consistent responses.' },
+  const SKILLS_EN = [
+    { emoji: '🤖', name: 'Autonomous AI Agents', skills: 'Claude Code, Codex, Hermes Agent, OpenCode', desc: 'Coding agent orchestration & task delegation', count: 4 },
+    { emoji: '🎨', name: 'Creative Generation', skills: 'ASCII Art, Excalidraw, p5.js, Manim, ComfyUI, Baoyu + more', desc: 'ASCII art, arch diagrams, hand-drawn, 3D animation', count: 13 },
+    { emoji: '📊', name: 'Data Science', skills: 'Hybrid Web Scraper, Jupyter', desc: 'Web scraping + interactive data analysis', count: 2 },
+    { emoji: '🐙', name: 'GitHub Workflows', skills: 'Code Review, PR Workflow, Issues, Auth, Repo Mgmt + more', desc: 'Full GitHub ops chain: review, merge, manage', count: 6 },
+    { emoji: '🎵', name: 'Media Processing', skills: 'YouTube Transcript, GIF Search, HeartMuLa, Songsee', desc: 'Audio/video extraction and generation', count: 4 },
+    { emoji: '🧬', name: 'MLOps', skills: 'llama.cpp, vLLM, HuggingFace Hub, lm-eval, W&B, SAM + more', desc: 'Model inference, evaluation, deployment', count: 7 },
+    { emoji: '📝', name: 'Note Taking', skills: 'Obsidian', desc: 'Knowledge base read/write/query', count: 1 },
+    { emoji: '⚡', name: 'Productivity', skills: 'Airtable, GWS, Intel Agent, Maps, PDF, Notion, PPT + more', desc: 'Office automation, document processing', count: 10 },
+    { emoji: '🔬', name: 'Research & Intel', skills: 'arXiv, Blogwatcher, last30days, LLM Wiki, Polymarket + more', desc: 'Academic search, blog monitoring, research', count: 7 },
+    { emoji: '💻', name: 'Software Dev', skills: 'Debugger, TDD, Code Review, Plan, Spike, Simplifier + more', desc: 'Full dev cycle: debug, test, plan, simplify', count: 8 },
+    { emoji: '📧', name: 'Email', skills: 'Himalaya CLI', desc: 'IMAP/SMTP terminal email', count: 1 },
+    { emoji: '🐦', name: 'Social Media', skills: 'xurl (X/Twitter)', desc: 'Twitter v2 API posting & search', count: 1 },
+    { emoji: '💡', name: 'Smart Home', skills: 'OpenHue', desc: 'Philips Hue light control', count: 1 },
   ]
 
-  function renderProjects(projects: typeof PROJECTS_EN) {
-    return projects
-      .map(
-        (p) =>
-          `<article class="p-6 bg-[var(--bg-card)] rounded-2xl border border-[var(--border)] hover:border-[var(--accent)] transition-colors card-hover"><div class="text-3xl mb-3">${p.emoji}</div><h2 class="text-xl font-bold mb-2">${p.name}</h2><p class="text-[var(--text-dim)] mb-4 text-sm leading-relaxed">${p.desc}</p><div class="text-xs text-[var(--text-muted)] font-mono">${p.tech}</div></article>`
-      )
-      .join('')
+  function renderSkills(items: typeof SKILLS_ZH) {
+    return items.map(s =>
+      `<article class="p-5 bg-[var(--bg-card)] rounded-2xl border border-[var(--border)] hover:border-[var(--accent)] transition-colors card-hover">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="text-2xl">${s.emoji}</span>
+          <div>
+            <h2 class="text-lg font-bold">${s.name}</h2>
+            <div class="text-xs text-[var(--text-muted)]">${s.count} 个技能</div>
+          </div>
+        </div>
+        <p class="text-[var(--text-dim)] text-sm mb-3">${s.desc}</p>
+        <div class="text-xs text-[var(--accent)] font-mono">${s.skills}</div>
+      </article>`
+    ).join('')
   }
 
   function getLang(): 'zh' | 'en' {
@@ -71,21 +67,13 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     return l === 'en' ? 'en' : 'zh'
   }
 
-  function applyProjectsTranslations(lang: 'zh' | 'en') {
-    const labels = lang === 'en' ? LABELS_EN : LABELS_ZH
-    const tEl = document.querySelector('[data-i18n="projects.title"]')
-    if (tEl) tEl.textContent = labels.title
-    const sEl = document.querySelector('[data-i18n="projects.subtitle"]')
-    if (sEl) sEl.textContent = labels.subtitle
-    const grid = document.querySelector('[data-projects-grid]')
-    if (grid) {
-      grid.innerHTML = renderProjects(lang === 'en' ? PROJECTS_EN : PROJECTS_ZH)
-    }
+  function render() {
+    const lang = getLang()
+    const items = lang === 'en' ? SKILLS_EN : SKILLS_ZH
+    const grid = document.querySelector('[data-skills-grid]')
+    if (grid) grid.innerHTML = renderSkills(items)
   }
 
-  window.addEventListener('langchange', (e: Event) => {
-    const detail = (e as CustomEvent).detail
-    applyProjectsTranslations(detail?.lang || getLang())
-  })
-  applyProjectsTranslations(getLang())
+  window.addEventListener('langchange', () => render())
+  render()
 </script>
