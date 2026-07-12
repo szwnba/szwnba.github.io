@@ -97,12 +97,12 @@ export const translations = {
       wiki: '10 topic pages in 20_Wiki',
       output: '1 analysis report in 30_Outputs',
       categories: [
-        { name: 'OpenClaw', count: 41, emoji: '🦞' },
+        { name: 'OpenClaw', count: 80, emoji: '🦞' },
         { name: 'Playwright AI', count: 40, emoji: '🎭' },
         { name: 'Test Engineering (测试工程)', count: 37, emoji: '🧪' },
         { name: 'Investment (投资与变现)', count: 36, emoji: '📈' },
-        { name: 'Browser Automation (浏览器自动化)', count: 27, emoji: '🌐' },
-        { name: 'AI Skill', count: 24, emoji: '🤖' },
+        { name: 'Browser Automation (浏览器自动化)', count: 88, emoji: '🌐' },
+        { name: 'AI Skill', count: 23, emoji: '🤖' },
         { name: 'AI Philosophy (AI 理念与范式)', count: 23, emoji: '💡' },
         { name: 'Claude Code & OpenCode', count: 23, emoji: '⌨️' },
         { name: 'Onboarding', count: 21, emoji: '🚀' },
@@ -174,7 +174,7 @@ export const translations = {
   // ===== 分析报告 =====
   report: {
     title: '📊 Knowledge Base Analysis Report',
-    subtitle: '308 articles · 13 categories · Full data analysis',
+    subtitle: '332 articles · 13 categories · Full data analysis',
     generated: 'Generated',
     dataSource: '00_Inbox/ 308 articles',
     scope: '13 topic categories',
