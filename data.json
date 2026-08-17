@@ -1,0 +1,557 @@
+{
+  "owner": {
+    "login": "szwnba",
+    "name": "Johnson zhang",
+    "bio": "",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7855369?v=4",
+    "html_url": "https://github.com/szwnba",
+    "followers": 54
+  },
+  "stats": {
+    "repos": 20,
+    "stars": 90,
+    "forks": 13,
+    "languages": [
+      {
+        "name": "HTML",
+        "count": 5
+      },
+      {
+        "name": "Python",
+        "count": 4
+      },
+      {
+        "name": "TypeScript",
+        "count": 2
+      },
+      {
+        "name": "JavaScript",
+        "count": 1
+      },
+      {
+        "name": "Astro",
+        "count": 1
+      },
+      {
+        "name": "Vue",
+        "count": 1
+      },
+      {
+        "name": "Dockerfile",
+        "count": 1
+      },
+      {
+        "name": "Shell",
+        "count": 1
+      },
+      {
+        "name": "Java",
+        "count": 1
+      }
+    ]
+  },
+  "repos": [
+    {
+      "name": "idea-radar",
+      "description": "灵感雷达 Idea Radar — 自动扫描 10 个灵感频道的无人值守信号站，每 2 小时巡扫，Vercel 自动部署",
+      "url": "https://github.com/szwnba/idea-radar",
+      "homepage": "https://idea-radar-seven.vercel.app",
+      "topics": [],
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "pct": 96.4
+        },
+        {
+          "name": "CSS",
+          "pct": 2.9
+        },
+        {
+          "name": "JavaScript",
+          "pct": 0.7
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-17T16:38:42Z",
+      "created_at": "2026-08-16T23:33:33Z",
+      "archived": false
+    },
+    {
+      "name": "study",
+      "description": "",
+      "url": "https://github.com/szwnba/study",
+      "homepage": "https://study-drab-eta.vercel.app",
+      "topics": [],
+      "language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "pct": 99.8
+        },
+        {
+          "name": "JavaScript",
+          "pct": 0.2
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-04T13:21:27Z",
+      "created_at": "2026-08-04T13:19:11Z",
+      "archived": false
+    },
+    {
+      "name": "affweb",
+      "description": "",
+      "url": "https://github.com/szwnba/affweb",
+      "homepage": "",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 77,
+      "forks": 12,
+      "pushed_at": "2026-08-01T15:33:56Z",
+      "created_at": "2022-08-25T16:37:55Z",
+      "archived": false
+    },
+    {
+      "name": "zhihu-seo",
+      "description": "知乎长尾关键词挖掘与内容矩阵规划平台",
+      "url": "https://github.com/szwnba/zhihu-seo",
+      "homepage": "",
+      "topics": [],
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "pct": 72.2
+        },
+        {
+          "name": "TypeScript",
+          "pct": 25.7
+        },
+        {
+          "name": "CSS",
+          "pct": 1
+        },
+        {
+          "name": "JavaScript",
+          "pct": 0.6
+        },
+        {
+          "name": "Makefile",
+          "pct": 0.3
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-07-29T14:46:17Z",
+      "created_at": "2026-07-29T01:04:22Z",
+      "archived": false
+    },
+    {
+      "name": "space",
+      "description": "",
+      "url": "https://github.com/szwnba/space",
+      "homepage": "space-dusky.vercel.app",
+      "topics": [],
+      "language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "pct": 77
+        },
+        {
+          "name": "CSS",
+          "pct": 11.8
+        },
+        {
+          "name": "HTML",
+          "pct": 11.2
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "pushed_at": "2026-07-29T11:30:04Z",
+      "created_at": "2020-03-26T04:16:48Z",
+      "archived": false
+    },
+    {
+      "name": "mindnest",
+      "description": "心栖 MindNest — 专业人格心理测评平台 (Next.js 15 + TypeScript + Tailwind)",
+      "url": "https://github.com/szwnba/mindnest",
+      "homepage": "https://mindnest-six.vercel.app",
+      "topics": [],
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "pct": 84
+        },
+        {
+          "name": "CSS",
+          "pct": 16
+        },
+        {
+          "name": "JavaScript",
+          "pct": 0.1
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "pushed_at": "2026-07-27T15:16:05Z",
+      "created_at": "2026-06-20T13:57:18Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba.github.io",
+      "description": "Johnson的个人空间",
+      "url": "https://github.com/szwnba/szwnba.github.io",
+      "homepage": "https://126.plus/",
+      "topics": [],
+      "language": "Astro",
+      "languages": [
+        {
+          "name": "Astro",
+          "pct": 65.6
+        },
+        {
+          "name": "TypeScript",
+          "pct": 22
+        },
+        {
+          "name": "Python",
+          "pct": 9.7
+        },
+        {
+          "name": "CSS",
+          "pct": 2.4
+        },
+        {
+          "name": "JavaScript",
+          "pct": 0.3
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-07-26T03:02:34Z",
+      "created_at": "2024-07-20T06:03:42Z",
+      "archived": false
+    },
+    {
+      "name": "hermes-skills",
+      "description": "Hermes Agent backup - hybrid-web-scraper + intelligence-agent-builder + Agent skill updates for data collection knowledge base",
+      "url": "https://github.com/szwnba/hermes-skills",
+      "homepage": "",
+      "topics": [],
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "pct": 38.7
+        },
+        {
+          "name": "TeX",
+          "pct": 38
+        },
+        {
+          "name": "BibTeX Style",
+          "pct": 13.7
+        },
+        {
+          "name": "HTML",
+          "pct": 7
+        },
+        {
+          "name": "Shell",
+          "pct": 2.2
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-07-05T06:39:27Z",
+      "created_at": "2026-07-03T15:30:34Z",
+      "archived": false
+    },
+    {
+      "name": "hermes-hybrid-scraper",
+      "description": "混合策略网页采集 + 进化型知识库工具 - Crawl4AI + Playwright + Tavily",
+      "url": "https://github.com/szwnba/hermes-hybrid-scraper",
+      "homepage": "",
+      "topics": [],
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "pct": 100
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-06-28T15:06:02Z",
+      "created_at": "2026-06-27T17:55:41Z",
+      "archived": false
+    },
+    {
+      "name": "mybook",
+      "description": "",
+      "url": "https://github.com/szwnba/mybook",
+      "homepage": "https://mybook-orpin.vercel.app",
+      "topics": [],
+      "language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "pct": 49.6
+        },
+        {
+          "name": "TypeScript",
+          "pct": 29.8
+        },
+        {
+          "name": "CSS",
+          "pct": 20.6
+        },
+        {
+          "name": "JavaScript",
+          "pct": 0.1
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "pushed_at": "2026-06-20T13:22:47Z",
+      "created_at": "2021-06-12T11:11:50Z",
+      "archived": false
+    },
+    {
+      "name": "news",
+      "description": "",
+      "url": "https://github.com/szwnba/news",
+      "homepage": "https://news-six-indol.vercel.app",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2024-08-26T16:27:37Z",
+      "created_at": "2024-07-27T17:00:32Z",
+      "archived": false
+    },
+    {
+      "name": "learn365",
+      "description": "",
+      "url": "https://github.com/szwnba/learn365",
+      "homepage": "",
+      "topics": [],
+      "language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "pct": 91
+        },
+        {
+          "name": "CSS",
+          "pct": 5.5
+        },
+        {
+          "name": "JavaScript",
+          "pct": 3.5
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "pushed_at": "2024-07-27T08:53:40Z",
+      "created_at": "2018-02-13T03:32:19Z",
+      "archived": false
+    },
+    {
+      "name": "verceldjango",
+      "description": "",
+      "url": "https://github.com/szwnba/verceldjango",
+      "homepage": "https://verceldjango-roan.vercel.app",
+      "topics": [],
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "pct": 94.2
+        },
+        {
+          "name": "Shell",
+          "pct": 5.8
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2024-07-26T17:37:44Z",
+      "created_at": "2024-07-23T13:32:51Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba",
+      "description": "",
+      "url": "https://github.com/szwnba/szwnba",
+      "homepage": "",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2024-07-20T10:41:22Z",
+      "created_at": "2024-07-20T10:27:31Z",
+      "archived": false
+    },
+    {
+      "name": "md",
+      "description": "WeChat Markdown Editor | 一款高度简洁的微信 Markdown 编辑器, Forked from doocs/md",
+      "url": "https://github.com/szwnba/md",
+      "homepage": "",
+      "topics": [],
+      "language": "Vue",
+      "languages": [
+        {
+          "name": "Vue",
+          "pct": 50.1
+        },
+        {
+          "name": "JavaScript",
+          "pct": 43.2
+        },
+        {
+          "name": "Less",
+          "pct": 5.1
+        },
+        {
+          "name": "HTML",
+          "pct": 1.5
+        },
+        {
+          "name": "Shell",
+          "pct": 0.1
+        }
+      ],
+      "stars": 2,
+      "forks": 0,
+      "pushed_at": "2024-07-20T09:03:46Z",
+      "created_at": "2024-07-20T07:18:57Z",
+      "archived": false
+    },
+    {
+      "name": "Pipeline_Design",
+      "description": "",
+      "url": "https://github.com/szwnba/Pipeline_Design",
+      "homepage": "",
+      "topics": [],
+      "language": "Dockerfile",
+      "languages": [
+        {
+          "name": "Dockerfile",
+          "pct": 94.6
+        },
+        {
+          "name": "Python",
+          "pct": 5.4
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "pushed_at": "2024-01-04T16:43:05Z",
+      "created_at": "2023-03-13T15:55:59Z",
+      "archived": false
+    },
+    {
+      "name": "affpops",
+      "description": "",
+      "url": "https://github.com/szwnba/affpops",
+      "homepage": "",
+      "topics": [],
+      "language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "pct": 100
+        }
+      ],
+      "stars": 3,
+      "forks": 1,
+      "pushed_at": "2023-04-15T15:24:14Z",
+      "created_at": "2022-09-01T14:55:29Z",
+      "archived": false
+    },
+    {
+      "name": "simpleui_demo",
+      "description": "",
+      "url": "https://github.com/szwnba/simpleui_demo",
+      "homepage": "",
+      "topics": [],
+      "language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "pct": 55.8
+        },
+        {
+          "name": "Python",
+          "pct": 41.4
+        },
+        {
+          "name": "Less",
+          "pct": 2.7
+        },
+        {
+          "name": "Shell",
+          "pct": 0.1
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "pushed_at": "2021-04-14T16:15:00Z",
+      "created_at": "2021-04-05T15:29:18Z",
+      "archived": false
+    },
+    {
+      "name": "docker",
+      "description": "",
+      "url": "https://github.com/szwnba/docker",
+      "homepage": "",
+      "topics": [],
+      "language": "Shell",
+      "languages": [
+        {
+          "name": "Shell",
+          "pct": 55
+        },
+        {
+          "name": "HTML",
+          "pct": 45
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "pushed_at": "2020-07-06T23:54:10Z",
+      "created_at": "2020-07-04T10:57:04Z",
+      "archived": false
+    },
+    {
+      "name": "MavenTest",
+      "description": "",
+      "url": "https://github.com/szwnba/MavenTest",
+      "homepage": "",
+      "topics": [],
+      "language": "Java",
+      "languages": [
+        {
+          "name": "Java",
+          "pct": 100
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "pushed_at": "2020-05-27T15:40:00Z",
+      "created_at": "2020-05-16T10:11:24Z",
+      "archived": false
+    }
+  ],
+  "generated_at": "2026-08-17T18:23:53.317Z"
+}
