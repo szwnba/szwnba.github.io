@@ -1,5 +1,5 @@
-/* 开源项目扫描站 · 前端渲染
-   读取 data.json（由 GitHub Actions 每日生成），渲染雷达图与项目卡片。 */
+/* Johnson Zhang · 个人项目集
+   读取 data.json（由 GitHub Actions 每日生成），渲染项目卡片。 */
 (function () {
   'use strict';
 
@@ -34,12 +34,6 @@
     return /^https?:\/\//i.test(h) ? h : 'https://' + h;
   }
 
-  function hash(s) {
-    var h = 0;
-    for (var i = 0; i < s.length; i++) h = ((h * 31) + s.charCodeAt(i)) >>> 0;
-    return h;
-  }
-
   /* GitHub linguist 常见语言色 */
   var LANG_COLORS = {
     JavaScript: '#f1e05a', TypeScript: '#3178c6', HTML: '#e34c26', CSS: '#563d7c',
@@ -53,13 +47,25 @@
   };
   function langColor(name) { return LANG_COLORS[name] || '#9FB3D1'; }
 
+  /* ---------- 主题切换（默认浅色，选择会记住） ---------- */
+  var themeBtn = $('theme-btn');
+  function setTheme(t, save) {
+    document.documentElement.dataset.theme = t;
+    themeBtn.setAttribute('aria-label', t === 'dark' ? '切换到浅色主题' : '切换到深色主题');
+    if (save) { try { localStorage.setItem('theme', t); } catch (e) { /* 隐私模式忽略 */ } }
+  }
+  setTheme(document.documentElement.dataset.theme || 'light', false);
+  themeBtn.addEventListener('click', function () {
+    setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark', true);
+  });
+
   /* ---------- 状态 ---------- */
   var state = { q: '', lang: '', sort: 'pushed' };
   var DATA = null;
 
-  /* ---------- 渲染：头部信息 ---------- */
+  /* ---------- 渲染：个人介绍 ---------- */
   function renderHead(d) {
-    document.title = d.owner.name + ' · 开源项目扫描站';
+    document.title = d.owner.name + ' · 个人项目集';
     var avatar = $('owner-avatar');
     avatar.src = d.owner.avatar_url;
     avatar.alt = d.owner.name;
@@ -67,13 +73,13 @@
     var link = $('owner-link');
     link.href = d.owner.html_url;
     link.textContent = '@' + d.owner.login + ' ↗';
+    /* GitHub 个人资料里填了 bio 就显示它，否则保留默认介绍 */
     if (d.owner.bio) $('owner-bio').textContent = d.owner.bio;
 
     $('stat-repos').textContent = d.stats.repos;
     $('stat-stars').textContent = d.stats.stars;
     $('stat-forks').textContent = d.stats.forks;
     $('stat-langs').textContent = d.stats.languages.length;
-    $('radar-count').textContent = d.stats.repos;
     $('scan-time').textContent = fmtTime(d.generated_at);
     $('footer-time').textContent = fmtTime(d.generated_at);
   }
@@ -129,7 +135,7 @@
       '<div class="card-meta">' +
       (lang
         ? '<span class="lang"><span class="dot" style="background:' + langColor(lang) + '"></span>' + esc(lang) + '</span>'
-        : '<span class="lang"><span class="dot" style="background:#5A6E8C"></span>未标记语言</span>') +
+        : '<span class="lang"><span class="dot" style="background:#8B99AF"></span>未标记语言</span>') +
       '<span class="stars' + (r.stars ? '' : ' zero') + '">★ ' + r.stars + '</span>' +
       '<span class="forks">⑂ ' + r.forks + '</span>' +
       '<span class="when" title="' + esc(fmtTime(r.pushed_at)) + '">' + relTime(r.pushed_at) + '</span>' +
@@ -154,7 +160,7 @@
     var archived = r.archived ? '<span class="badge-archived">已归档</span>' : '';
 
     return (
-      '<article class="card" id="card-' + esc(r.name) + '" data-repo="' + esc(r.name) + '">' +
+      '<article class="card">' +
       '<div class="card-top">' +
       '<a class="card-name" href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.name) + '</a>' +
       (home ? '<a class="card-home" href="' + esc(home) + '" target="_blank" rel="noopener" title="项目主页">⌂ 主页</a>' : '') +
@@ -167,132 +173,14 @@
     );
   }
 
-  /* ---------- 渲染：雷达 ---------- */
-  var NS = 'http://www.w3.org/2000/svg';
-  var BLIP_ELS = {};
-
-  function blipPos(r) {
-    var days = (Date.now() - new Date(r.pushed_at).getTime()) / 86400000;
-    var t = Math.min(1, Math.max(0, days / 365));      // 越新越靠心
-    var frac = 0.17 + 0.79 * t;
-    var ang = (hash(r.name) % 360) * Math.PI / 180;
-    var R = 184;                                         // viewBox 400，中心 200
-    return { x: 200 + Math.cos(ang) * R * frac, y: 200 + Math.sin(ang) * R * frac };
-  }
-
-  function blipRadius(r) { return 3.5 + Math.min(6.5, Math.sqrt(r.stars) * 1.4); }
-
-  function renderRadar(d) {
-    var svg = $('radar-svg');
-    svg.innerHTML = '';
-
-    [62, 124, 184].forEach(function (r) {
-      var c = document.createElementNS(NS, 'circle');
-      c.setAttribute('cx', 200); c.setAttribute('cy', 200); c.setAttribute('r', r);
-      c.setAttribute('class', 'ring');
-      svg.appendChild(c);
-    });
-    [[200, 8, 200, 392], [8, 200, 392, 200]].forEach(function (a) {
-      var l = document.createElementNS(NS, 'line');
-      l.setAttribute('x1', a[0]); l.setAttribute('y1', a[1]);
-      l.setAttribute('x2', a[2]); l.setAttribute('y2', a[3]);
-      l.setAttribute('class', 'axis');
-      svg.appendChild(l);
-    });
-    var core = document.createElementNS(NS, 'circle');
-    core.setAttribute('cx', 200); core.setAttribute('cy', 200); core.setAttribute('r', 2.4);
-    core.setAttribute('fill', '#FFC24B');
-    svg.appendChild(core);
-
-    var tip = $('radar-tip');
-
-    d.repos.forEach(function (r) {
-      var pos = blipPos(r);
-      var rad = blipRadius(r);
-      var color = r.language ? langColor(r.language) : '#9FB3D1';
-
-      var g = document.createElementNS(NS, 'g');
-      g.setAttribute('class', 'blip');
-      g.setAttribute('tabindex', '0');
-      g.setAttribute('role', 'button');
-      g.dataset.repo = r.name;
-      g.setAttribute('aria-label', r.name + '，' + r.stars + ' Star，' + relTime(r.pushed_at) + '更新');
-
-      var halo = document.createElementNS(NS, 'circle');
-      halo.setAttribute('cx', pos.x); halo.setAttribute('cy', pos.y);
-      halo.setAttribute('r', rad * 2.1);
-      halo.setAttribute('fill', color);
-      halo.setAttribute('class', 'halo');
-
-      var dotEl = document.createElementNS(NS, 'circle');
-      dotEl.setAttribute('cx', pos.x); dotEl.setAttribute('cy', pos.y);
-      dotEl.setAttribute('r', rad);
-      dotEl.setAttribute('fill', color);
-      dotEl.setAttribute('class', 'core');
-
-      g.appendChild(halo);
-      g.appendChild(dotEl);
-
-      function showTip(evt) {
-        tip.hidden = false;
-        tip.innerHTML = '<b>' + esc(r.name) + '</b>' +
-          '<span class="tip-star">★ ' + r.stars + '</span> · ' + relTime(r.pushed_at) +
-          (r.language ? ' · ' + esc(r.language) : '');
-        var rect = tip.parentElement.getBoundingClientRect();
-        var pt = evt.type === 'focus' ? g.getBoundingClientRect() : evt.target.getBoundingClientRect();
-        tip.style.left = (pt.left + pt.width / 2 - rect.left) + 'px';
-        tip.style.top = (pt.top - rect.top) + 'px';
-      }
-      g.addEventListener('mouseenter', showTip);
-      g.addEventListener('focus', showTip);
-      g.addEventListener('mouseleave', function () { tip.hidden = true; });
-      g.addEventListener('blur', function () { tip.hidden = true; });
-
-      function activate() {
-        var card = document.getElementById('card-' + r.name);
-        if (!card) return;
-        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        card.classList.remove('flash');
-        void card.offsetWidth;
-        card.classList.add('flash');
-      }
-      g.addEventListener('click', activate);
-      g.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); }
-      });
-
-      svg.appendChild(g);
-      BLIP_ELS[r.name] = g;
-    });
-  }
-
-  /* 卡片悬浮时点亮对应雷达光点 */
-  function bindCardHover() {
-    document.querySelectorAll('.card').forEach(function (card) {
-      var g = BLIP_ELS[card.dataset.repo];
-      if (!g) return;
-      card.addEventListener('mouseenter', function () { g.classList.add('lit'); });
-      card.addEventListener('mouseleave', function () { g.classList.remove('lit'); });
-    });
-  }
-
   /* ---------- 应用筛选 ---------- */
   function apply() {
     var list = visibleRepos();
-    var cards = $('cards');
-    cards.innerHTML = list.map(cardHtml).join('');
-
-    var names = {};
-    list.forEach(function (r) { names[r.name] = true; });
-    Object.keys(BLIP_ELS).forEach(function (n) {
-      BLIP_ELS[n].classList.toggle('dim', !names[n]);
-    });
-
+    $('cards').innerHTML = list.map(cardHtml).join('');
     $('count-line').textContent =
       '显示 ' + list.length + ' / ' + DATA.stats.repos + ' 个项目' +
       (state.sort === 'stars' ? ' · 按 STAR 排序' : state.sort === 'created' ? ' · 按创建时间排序' : ' · 按最近推送排序');
     $('empty-state').hidden = list.length !== 0;
-    bindCardHover();
   }
 
   /* ---------- 启动 ---------- */
@@ -300,7 +188,6 @@
     DATA = d;
     renderHead(d);
     renderChips(d);
-    renderRadar(d);
     apply();
 
     var timer = null;
