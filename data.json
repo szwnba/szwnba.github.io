@@ -8,13 +8,13 @@
     "followers": 54
   },
   "stats": {
-    "repos": 20,
-    "stars": 90,
+    "repos": 18,
+    "stars": 89,
     "forks": 13,
     "languages": [
       {
         "name": "HTML",
-        "count": 5
+        "count": 4
       },
       {
         "name": "Python",
@@ -43,10 +43,6 @@
       {
         "name": "Dockerfile",
         "count": 1
-      },
-      {
-        "name": "Shell",
-        "count": 1
       }
     ]
   },
@@ -74,7 +70,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-18T10:39:37Z",
+      "pushed_at": "2026-08-18T22:34:47Z",
       "created_at": "2026-08-16T23:33:33Z",
       "archived": false
     },
@@ -134,37 +130,6 @@
       "forks": 0,
       "pushed_at": "2026-08-18T04:35:20Z",
       "created_at": "2021-04-05T15:29:18Z",
-      "archived": false
-    },
-    {
-      "name": "mybook",
-      "description": "",
-      "url": "https://github.com/szwnba/mybook",
-      "homepage": "https://mybook-orpin.vercel.app",
-      "topics": [],
-      "language": "HTML",
-      "languages": [
-        {
-          "name": "HTML",
-          "pct": 49.6
-        },
-        {
-          "name": "TypeScript",
-          "pct": 29.8
-        },
-        {
-          "name": "CSS",
-          "pct": 20.6
-        },
-        {
-          "name": "JavaScript",
-          "pct": 0.1
-        }
-      ],
-      "stars": 1,
-      "forks": 0,
-      "pushed_at": "2026-08-18T04:35:18Z",
-      "created_at": "2021-06-12T11:11:50Z",
       "archived": false
     },
     {
@@ -263,7 +228,7 @@
       "topics": [],
       "language": null,
       "languages": [],
-      "stars": 77,
+      "stars": 78,
       "forks": 12,
       "pushed_at": "2026-08-01T15:33:56Z",
       "created_at": "2022-08-25T16:37:55Z",
@@ -528,30 +493,7 @@
       "pushed_at": "2024-01-04T16:43:05Z",
       "created_at": "2023-03-13T15:55:59Z",
       "archived": false
-    },
-    {
-      "name": "docker",
-      "description": "",
-      "url": "https://github.com/szwnba/docker",
-      "homepage": "",
-      "topics": [],
-      "language": "Shell",
-      "languages": [
-        {
-          "name": "Shell",
-          "pct": 55
-        },
-        {
-          "name": "HTML",
-          "pct": 45
-        }
-      ],
-      "stars": 1,
-      "forks": 0,
-      "pushed_at": "2020-07-06T23:54:10Z",
-      "created_at": "2020-07-04T10:57:04Z",
-      "archived": false
     }
   ],
-  "generated_at": "2026-08-18T12:49:19.829Z"
+  "generated_at": "2026-08-19T01:10:31.077Z"
 }
