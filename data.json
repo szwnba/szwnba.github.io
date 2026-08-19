@@ -2,23 +2,23 @@
   "owner": {
     "login": "szwnba",
     "name": "Johnson zhang",
-    "bio": "",
+    "bio": "写工具、做网站、折腾自动化",
     "avatar_url": "https://avatars.githubusercontent.com/u/7855369?v=4",
     "html_url": "https://github.com/szwnba",
-    "followers": 54
+    "followers": 55
   },
   "stats": {
-    "repos": 18,
-    "stars": 89,
+    "repos": 15,
+    "stars": 87,
     "forks": 13,
     "languages": [
       {
-        "name": "HTML",
+        "name": "Python",
         "count": 4
       },
       {
-        "name": "Python",
-        "count": 4
+        "name": "HTML",
+        "count": 3
       },
       {
         "name": "TypeScript",
@@ -26,10 +26,6 @@
       },
       {
         "name": "JavaScript",
-        "count": 1
-      },
-      {
-        "name": "Java",
         "count": 1
       },
       {
@@ -70,13 +66,32 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-18T22:34:47Z",
+      "pushed_at": "2026-08-19T14:44:01Z",
       "created_at": "2026-08-16T23:33:33Z",
       "archived": false
     },
     {
+      "name": "szwnba",
+      "description": "GitHub 个人主页（Profile README）",
+      "url": "https://github.com/szwnba/szwnba",
+      "homepage": "",
+      "topics": [],
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "pct": 100
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-19T12:46:42Z",
+      "created_at": "2024-07-20T10:27:31Z",
+      "archived": false
+    },
+    {
       "name": "space",
-      "description": "",
+      "description": "Johnson Photography · 个人摄影作品展示站",
       "url": "https://github.com/szwnba/space",
       "homepage": "space-dusky.vercel.app",
       "topics": [],
@@ -102,39 +117,8 @@
       "archived": false
     },
     {
-      "name": "simpleui_demo",
-      "description": "",
-      "url": "https://github.com/szwnba/simpleui_demo",
-      "homepage": "",
-      "topics": [],
-      "language": "HTML",
-      "languages": [
-        {
-          "name": "HTML",
-          "pct": 55.8
-        },
-        {
-          "name": "Python",
-          "pct": 41.4
-        },
-        {
-          "name": "Less",
-          "pct": 2.7
-        },
-        {
-          "name": "Shell",
-          "pct": 0.1
-        }
-      ],
-      "stars": 1,
-      "forks": 0,
-      "pushed_at": "2026-08-18T04:35:20Z",
-      "created_at": "2021-04-05T15:29:18Z",
-      "archived": false
-    },
-    {
       "name": "learn365",
-      "description": "",
+      "description": "个人学习博客（静态站点）：归档 / 分类 / 标签 / 站内搜索",
       "url": "https://github.com/szwnba/learn365",
       "homepage": "",
       "topics": [],
@@ -161,7 +145,7 @@
     },
     {
       "name": "affpops",
-      "description": "",
+      "description": "Affiliate 推广落地页集合（pops 方向），按投放测试分组",
       "url": "https://github.com/szwnba/affpops",
       "homepage": "",
       "topics": [],
@@ -179,27 +163,8 @@
       "archived": false
     },
     {
-      "name": "MavenTest",
-      "description": "",
-      "url": "https://github.com/szwnba/MavenTest",
-      "homepage": "",
-      "topics": [],
-      "language": "Java",
-      "languages": [
-        {
-          "name": "Java",
-          "pct": 100
-        }
-      ],
-      "stars": 1,
-      "forks": 0,
-      "pushed_at": "2026-08-18T04:35:13Z",
-      "created_at": "2020-05-16T10:11:24Z",
-      "archived": false
-    },
-    {
       "name": "study",
-      "description": "",
+      "description": "学习资料阅读 PWA：中英文材料 + 学习笔记",
       "url": "https://github.com/szwnba/study",
       "homepage": "https://study-drab-eta.vercel.app",
       "topics": [],
@@ -222,9 +187,9 @@
     },
     {
       "name": "affweb",
-      "description": "",
+      "description": "Johnson 的网络备忘录 · 126.plus",
       "url": "https://github.com/szwnba/affweb",
-      "homepage": "",
+      "homepage": "https://126.plus",
       "topics": [],
       "language": null,
       "languages": [],
@@ -387,7 +352,7 @@
     },
     {
       "name": "news",
-      "description": "",
+      "description": "公众号低粉爆文案例库 · news.126.plus",
       "url": "https://github.com/szwnba/news",
       "homepage": "https://news-six-indol.vercel.app",
       "topics": [],
@@ -397,43 +362,6 @@
       "forks": 0,
       "pushed_at": "2024-08-26T16:27:37Z",
       "created_at": "2024-07-27T17:00:32Z",
-      "archived": false
-    },
-    {
-      "name": "verceldjango",
-      "description": "",
-      "url": "https://github.com/szwnba/verceldjango",
-      "homepage": "https://verceldjango-roan.vercel.app",
-      "topics": [],
-      "language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "pct": 94.2
-        },
-        {
-          "name": "Shell",
-          "pct": 5.8
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2024-07-26T17:37:44Z",
-      "created_at": "2024-07-23T13:32:51Z",
-      "archived": false
-    },
-    {
-      "name": "szwnba",
-      "description": "",
-      "url": "https://github.com/szwnba/szwnba",
-      "homepage": "",
-      "topics": [],
-      "language": null,
-      "languages": [],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2024-07-20T10:41:22Z",
-      "created_at": "2024-07-20T10:27:31Z",
       "archived": false
     },
     {
@@ -473,7 +401,7 @@
     },
     {
       "name": "Pipeline_Design",
-      "description": "",
+      "description": "ChatGPT 提示词流水线实验：Python + Docker + Jenkins CI",
       "url": "https://github.com/szwnba/Pipeline_Design",
       "homepage": "",
       "topics": [],
@@ -495,5 +423,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-08-19T01:10:31.077Z"
+  "generated_at": "2026-08-19T15:13:55.293Z"
 }
