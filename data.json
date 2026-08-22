@@ -66,8 +66,22 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-20T22:37:13Z",
+      "pushed_at": "2026-08-21T22:34:16Z",
       "created_at": "2026-08-16T23:33:33Z",
+      "archived": false
+    },
+    {
+      "name": "affweb",
+      "description": "Johnson 的网络备忘录 · 126.plus",
+      "url": "https://github.com/szwnba/affweb",
+      "homepage": "https://126.plus",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 78,
+      "forks": 12,
+      "pushed_at": "2026-08-21T03:05:12Z",
+      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -183,20 +197,6 @@
       "forks": 0,
       "pushed_at": "2026-08-04T13:21:27Z",
       "created_at": "2026-08-04T13:19:11Z",
-      "archived": false
-    },
-    {
-      "name": "affweb",
-      "description": "Johnson 的网络备忘录 · 126.plus",
-      "url": "https://github.com/szwnba/affweb",
-      "homepage": "https://126.plus",
-      "topics": [],
-      "language": null,
-      "languages": [],
-      "stars": 78,
-      "forks": 12,
-      "pushed_at": "2026-08-01T15:33:56Z",
-      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -423,5 +423,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-08-21T01:13:49.618Z"
+  "generated_at": "2026-08-22T01:09:35.148Z"
 }
