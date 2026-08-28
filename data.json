@@ -21,19 +21,15 @@
         "count": 3
       },
       {
+        "name": "JavaScript",
+        "count": 2
+      },
+      {
         "name": "TypeScript",
         "count": 2
       },
       {
         "name": "Smali",
-        "count": 1
-      },
-      {
-        "name": "JavaScript",
-        "count": 1
-      },
-      {
-        "name": "Astro",
         "count": 1
       },
       {
@@ -43,6 +39,64 @@
     ]
   },
   "repos": [
+    {
+      "name": "DoitClone",
+      "description": "经典 GTD，本地优先. 基于经典 doit.im 交互与视觉的完整复刻",
+      "url": "https://github.com/szwnba/DoitClone",
+      "homepage": "https://szwnba.github.io/DoitClone",
+      "topics": [],
+      "language": "Smali",
+      "languages": [
+        {
+          "name": "Smali",
+          "pct": 96.2
+        },
+        {
+          "name": "HTML",
+          "pct": 3.6
+        },
+        {
+          "name": "Java",
+          "pct": 0.2
+        },
+        {
+          "name": "CSS",
+          "pct": 0
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-28T17:30:12Z",
+      "created_at": "2026-08-25T18:12:56Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba.github.io",
+      "description": "个人项目介绍站 — 自动同步 GitHub 原创项目，Actions 每日更新，默认浅色/深色双主题",
+      "url": "https://github.com/szwnba/szwnba.github.io",
+      "homepage": "https://szwnba.github.io/",
+      "topics": [],
+      "language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "pct": 44.7
+        },
+        {
+          "name": "CSS",
+          "pct": 35
+        },
+        {
+          "name": "HTML",
+          "pct": 20.3
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-28T09:43:09Z",
+      "created_at": "2026-08-17T18:30:35Z",
+      "archived": false
+    },
     {
       "name": "idea-radar",
       "description": "灵感雷达 Idea Radar — 自动扫描 10 个灵感频道的无人值守信号站，每 2 小时巡扫，Vercel 自动部署",
@@ -68,37 +122,6 @@
       "forks": 0,
       "pushed_at": "2026-08-28T06:05:00Z",
       "created_at": "2026-08-16T23:33:33Z",
-      "archived": false
-    },
-    {
-      "name": "DoitClone",
-      "description": "经典 GTD，本地优先. 基于经典 doit.im 交互与视觉的完整复刻",
-      "url": "https://github.com/szwnba/DoitClone",
-      "homepage": "https://szwnba.github.io/DoitClone",
-      "topics": [],
-      "language": "Smali",
-      "languages": [
-        {
-          "name": "Smali",
-          "pct": 96.2
-        },
-        {
-          "name": "HTML",
-          "pct": 3.6
-        },
-        {
-          "name": "Java",
-          "pct": 0.1
-        },
-        {
-          "name": "CSS",
-          "pct": 0
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-08-28T02:09:27Z",
-      "created_at": "2026-08-25T18:12:56Z",
       "archived": false
     },
     {
@@ -293,41 +316,6 @@
       "archived": false
     },
     {
-      "name": "szwnba.github.io",
-      "description": "Johnson的个人空间",
-      "url": "https://github.com/szwnba/szwnba.github.io",
-      "homepage": "https://szwnba.github.io",
-      "topics": [],
-      "language": "Astro",
-      "languages": [
-        {
-          "name": "Astro",
-          "pct": 65.6
-        },
-        {
-          "name": "TypeScript",
-          "pct": 22
-        },
-        {
-          "name": "Python",
-          "pct": 9.7
-        },
-        {
-          "name": "CSS",
-          "pct": 2.4
-        },
-        {
-          "name": "JavaScript",
-          "pct": 0.3
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-07-26T03:02:34Z",
-      "created_at": "2024-07-20T06:03:42Z",
-      "archived": false
-    },
-    {
       "name": "hermes-skills",
       "description": "Hermes Agent backup - hybrid-web-scraper + intelligence-agent-builder + Agent skill updates for data collection knowledge base",
       "url": "https://github.com/szwnba/hermes-skills",
@@ -417,5 +405,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-08-28T09:43:08.312Z"
+  "generated_at": "2026-08-28T17:47:45.534Z"
 }
