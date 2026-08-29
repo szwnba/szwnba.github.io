@@ -5,10 +5,10 @@
     "bio": "写工具、做网站、折腾自动化",
     "avatar_url": "https://avatars.githubusercontent.com/u/7855369?v=4",
     "html_url": "https://github.com/szwnba",
-    "followers": 55
+    "followers": 56
   },
   "stats": {
-    "repos": 14,
+    "repos": 15,
     "stars": 87,
     "forks": 14,
     "languages": [
@@ -21,12 +21,16 @@
         "count": 3
       },
       {
+        "name": "TypeScript",
+        "count": 2
+      },
+      {
         "name": "JavaScript",
         "count": 2
       },
       {
-        "name": "TypeScript",
-        "count": 2
+        "name": "CSS",
+        "count": 1
       },
       {
         "name": "Smali",
@@ -39,6 +43,51 @@
     ]
   },
   "repos": [
+    {
+      "name": "affweb",
+      "description": "Johnson 的网络备忘录 · 126.plus",
+      "url": "https://github.com/szwnba/affweb",
+      "homepage": "https://126.plus",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 79,
+      "forks": 13,
+      "pushed_at": "2026-08-29T00:44:56Z",
+      "created_at": "2022-08-25T16:37:55Z",
+      "archived": false
+    },
+    {
+      "name": "chinese-indie-makers",
+      "description": "中国独立开发者 · 产品陈列馆 — 可视化浏览 1000-chinese-independent-developer-plus 的项目列表，支持搜索与分类筛选",
+      "url": "https://github.com/szwnba/chinese-indie-makers",
+      "homepage": "https://szwnba.github.io/chinese-indie-makers/",
+      "topics": [],
+      "language": "CSS",
+      "languages": [
+        {
+          "name": "CSS",
+          "pct": 36.5
+        },
+        {
+          "name": "JavaScript",
+          "pct": 29.9
+        },
+        {
+          "name": "Python",
+          "pct": 20.3
+        },
+        {
+          "name": "HTML",
+          "pct": 13.2
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-28T19:21:57Z",
+      "created_at": "2026-08-28T19:21:36Z",
+      "archived": false
+    },
     {
       "name": "DoitClone",
       "description": "经典 GTD，本地优先. 基于经典 doit.im 交互与视觉的完整复刻",
@@ -66,35 +115,8 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-28T17:30:12Z",
+      "pushed_at": "2026-08-28T18:47:25Z",
       "created_at": "2026-08-25T18:12:56Z",
-      "archived": false
-    },
-    {
-      "name": "szwnba.github.io",
-      "description": "个人项目介绍站 — 自动同步 GitHub 原创项目，Actions 每日更新，默认浅色/深色双主题",
-      "url": "https://github.com/szwnba/szwnba.github.io",
-      "homepage": "https://szwnba.github.io/",
-      "topics": [],
-      "language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "pct": 44.7
-        },
-        {
-          "name": "CSS",
-          "pct": 35
-        },
-        {
-          "name": "HTML",
-          "pct": 20.3
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-08-28T09:43:09Z",
-      "created_at": "2026-08-17T18:30:35Z",
       "archived": false
     },
     {
@@ -120,22 +142,62 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-28T06:05:00Z",
+      "pushed_at": "2026-08-28T18:35:28Z",
       "created_at": "2026-08-16T23:33:33Z",
       "archived": false
     },
     {
-      "name": "affweb",
-      "description": "Johnson 的网络备忘录 · 126.plus",
-      "url": "https://github.com/szwnba/affweb",
-      "homepage": "https://126.plus",
+      "name": "learn365",
+      "description": "个人学习博客（静态站点）：归档 / 分类 / 标签 / 站内搜索",
+      "url": "https://github.com/szwnba/learn365",
+      "homepage": "https://szwnba.github.io/learn365/",
       "topics": [],
-      "language": null,
-      "languages": [],
-      "stars": 79,
-      "forks": 13,
-      "pushed_at": "2026-08-27T14:40:27Z",
-      "created_at": "2022-08-25T16:37:55Z",
+      "language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "pct": 91.2
+        },
+        {
+          "name": "CSS",
+          "pct": 5.4
+        },
+        {
+          "name": "JavaScript",
+          "pct": 3.5
+        }
+      ],
+      "stars": 1,
+      "forks": 0,
+      "pushed_at": "2026-08-28T18:00:48Z",
+      "created_at": "2018-02-13T03:32:19Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba.github.io",
+      "description": "个人项目介绍站 — 自动同步 GitHub 原创项目，Actions 每日更新，默认浅色/深色双主题",
+      "url": "https://github.com/szwnba/szwnba.github.io",
+      "homepage": "https://szwnba.github.io/",
+      "topics": [],
+      "language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "pct": 44.7
+        },
+        {
+          "name": "CSS",
+          "pct": 35
+        },
+        {
+          "name": "HTML",
+          "pct": 20.3
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-28T17:47:46Z",
+      "created_at": "2026-08-17T18:30:35Z",
       "archived": false
     },
     {
@@ -182,33 +244,6 @@
       "forks": 0,
       "pushed_at": "2026-08-18T04:35:21Z",
       "created_at": "2020-03-26T04:16:48Z",
-      "archived": false
-    },
-    {
-      "name": "learn365",
-      "description": "个人学习博客（静态站点）：归档 / 分类 / 标签 / 站内搜索",
-      "url": "https://github.com/szwnba/learn365",
-      "homepage": "https://szwnba.github.io/learn365/",
-      "topics": [],
-      "language": "HTML",
-      "languages": [
-        {
-          "name": "HTML",
-          "pct": 91
-        },
-        {
-          "name": "CSS",
-          "pct": 5.5
-        },
-        {
-          "name": "JavaScript",
-          "pct": 3.5
-        }
-      ],
-      "stars": 1,
-      "forks": 0,
-      "pushed_at": "2026-08-18T04:35:16Z",
-      "created_at": "2018-02-13T03:32:19Z",
       "archived": false
     },
     {
@@ -405,5 +440,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-08-28T17:47:45.534Z"
+  "generated_at": "2026-08-29T01:58:14.444Z"
 }
