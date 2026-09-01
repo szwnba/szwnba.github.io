@@ -21,19 +21,15 @@
         "count": 4
       },
       {
+        "name": "JavaScript",
+        "count": 3
+      },
+      {
         "name": "TypeScript",
         "count": 2
       },
       {
-        "name": "JavaScript",
-        "count": 2
-      },
-      {
         "name": "Smali",
-        "count": 1
-      },
-      {
-        "name": "CSS",
         "count": 1
       },
       {
@@ -44,20 +40,6 @@
   },
   "repos": [
     {
-      "name": "affweb",
-      "description": "Johnson 的网络备忘录 · 126.plus",
-      "url": "https://github.com/szwnba/affweb",
-      "homepage": "https://126.plus",
-      "topics": [],
-      "language": null,
-      "languages": [],
-      "stars": 79,
-      "forks": 13,
-      "pushed_at": "2026-08-31T03:21:13Z",
-      "created_at": "2022-08-25T16:37:55Z",
-      "archived": false
-    },
-    {
       "name": "ai-blog",
       "description": "全自动流水线生成的 AI 观察博客（由私有仓 wechat-article-pipeline 每日发布）",
       "url": "https://github.com/szwnba/ai-blog",
@@ -67,16 +49,16 @@
       "languages": [
         {
           "name": "HTML",
-          "pct": 92.4
+          "pct": 93.5
         },
         {
           "name": "CSS",
-          "pct": 7.6
+          "pct": 6.5
         }
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-31T01:23:57Z",
+      "pushed_at": "2026-09-01T01:49:43Z",
       "created_at": "2026-08-29T01:51:31Z",
       "archived": false
     },
@@ -103,7 +85,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-30T22:40:13Z",
+      "pushed_at": "2026-08-31T23:45:41Z",
       "created_at": "2026-08-16T23:33:33Z",
       "archived": false
     },
@@ -134,8 +116,72 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-30T14:06:19Z",
+      "pushed_at": "2026-08-31T17:10:03Z",
       "created_at": "2026-08-25T18:12:56Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba",
+      "description": "GitHub 个人主页（Profile README）",
+      "url": "https://github.com/szwnba/szwnba",
+      "homepage": "",
+      "topics": [],
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "pct": 100
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-31T08:01:13Z",
+      "created_at": "2024-07-20T10:27:31Z",
+      "archived": false
+    },
+    {
+      "name": "chinese-indie-makers",
+      "description": "中国独立开发者 · 产品陈列馆 — 可视化浏览 1000-chinese-independent-developer-plus 的项目列表，支持搜索与分类筛选",
+      "url": "https://github.com/szwnba/chinese-indie-makers",
+      "homepage": "https://szwnba.github.io/chinese-indie-makers/",
+      "topics": [],
+      "language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "pct": 38.3
+        },
+        {
+          "name": "CSS",
+          "pct": 35.9
+        },
+        {
+          "name": "Python",
+          "pct": 15.2
+        },
+        {
+          "name": "HTML",
+          "pct": 10.6
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-08-31T04:47:52Z",
+      "created_at": "2026-08-28T19:21:36Z",
+      "archived": false
+    },
+    {
+      "name": "affweb",
+      "description": "Johnson 的网络备忘录 · 126.plus",
+      "url": "https://github.com/szwnba/affweb",
+      "homepage": "https://126.plus",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 79,
+      "forks": 13,
+      "pushed_at": "2026-08-31T03:57:00Z",
+      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -161,58 +207,8 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-08-30T03:49:52Z",
+      "pushed_at": "2026-08-31T03:52:17Z",
       "created_at": "2026-08-17T18:30:35Z",
-      "archived": false
-    },
-    {
-      "name": "szwnba",
-      "description": "GitHub 个人主页（Profile README）",
-      "url": "https://github.com/szwnba/szwnba",
-      "homepage": "",
-      "topics": [],
-      "language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "pct": 100
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-08-29T01:58:49Z",
-      "created_at": "2024-07-20T10:27:31Z",
-      "archived": false
-    },
-    {
-      "name": "chinese-indie-makers",
-      "description": "中国独立开发者 · 产品陈列馆 — 可视化浏览 1000-chinese-independent-developer-plus 的项目列表，支持搜索与分类筛选",
-      "url": "https://github.com/szwnba/chinese-indie-makers",
-      "homepage": "https://szwnba.github.io/chinese-indie-makers/",
-      "topics": [],
-      "language": "CSS",
-      "languages": [
-        {
-          "name": "CSS",
-          "pct": 36.5
-        },
-        {
-          "name": "JavaScript",
-          "pct": 29.9
-        },
-        {
-          "name": "Python",
-          "pct": 20.3
-        },
-        {
-          "name": "HTML",
-          "pct": 13.2
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-08-28T19:21:57Z",
-      "created_at": "2026-08-28T19:21:36Z",
       "archived": false
     },
     {
@@ -463,5 +459,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-08-31T03:52:16.922Z"
+  "generated_at": "2026-09-01T03:44:20.637Z"
 }
