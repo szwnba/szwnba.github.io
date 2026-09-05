@@ -8,16 +8,16 @@
     "followers": 56
   },
   "stats": {
-    "repos": 16,
+    "repos": 17,
     "stars": 87,
     "forks": 14,
     "languages": [
       {
-        "name": "HTML",
-        "count": 4
+        "name": "Python",
+        "count": 5
       },
       {
-        "name": "Python",
+        "name": "HTML",
         "count": 4
       },
       {
@@ -39,6 +39,83 @@
     ]
   },
   "repos": [
+    {
+      "name": "ai-blog",
+      "description": "全自动流水线生成的 AI 观察博客（由私有仓 wechat-article-pipeline 每日发布）",
+      "url": "https://github.com/szwnba/ai-blog",
+      "homepage": "",
+      "topics": [],
+      "language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "pct": 96.3
+        },
+        {
+          "name": "CSS",
+          "pct": 3.7
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-05T00:53:29Z",
+      "created_at": "2026-08-29T01:51:31Z",
+      "archived": false
+    },
+    {
+      "name": "idea-radar",
+      "description": "灵感雷达 Idea Radar — 自动扫描 10 个灵感频道的无人值守信号站，每 2 小时巡扫，Vercel 自动部署",
+      "url": "https://github.com/szwnba/idea-radar",
+      "homepage": "https://idea-radar-seven.vercel.app",
+      "topics": [],
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "pct": 96.4
+        },
+        {
+          "name": "CSS",
+          "pct": 2.9
+        },
+        {
+          "name": "JavaScript",
+          "pct": 0.7
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-04T23:56:48Z",
+      "created_at": "2026-08-16T23:33:33Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba.github.io",
+      "description": "个人项目介绍站 — 自动同步 GitHub 原创项目，Actions 每日更新，默认浅色/深色双主题",
+      "url": "https://github.com/szwnba/szwnba.github.io",
+      "homepage": "https://szwnba.github.io/",
+      "topics": [],
+      "language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "pct": 44.7
+        },
+        {
+          "name": "CSS",
+          "pct": 35
+        },
+        {
+          "name": "HTML",
+          "pct": 20.3
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-04T03:04:17Z",
+      "created_at": "2026-08-17T18:30:35Z",
+      "archived": false
+    },
     {
       "name": "DoitClone",
       "description": "经典 GTD，本地优先. 基于经典 doit.im 交互与视觉的完整复刻",
@@ -71,56 +148,6 @@
       "archived": false
     },
     {
-      "name": "ai-blog",
-      "description": "全自动流水线生成的 AI 观察博客（由私有仓 wechat-article-pipeline 每日发布）",
-      "url": "https://github.com/szwnba/ai-blog",
-      "homepage": "",
-      "topics": [],
-      "language": "HTML",
-      "languages": [
-        {
-          "name": "HTML",
-          "pct": 95.8
-        },
-        {
-          "name": "CSS",
-          "pct": 4.2
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-09-04T00:57:59Z",
-      "created_at": "2026-08-29T01:51:31Z",
-      "archived": false
-    },
-    {
-      "name": "idea-radar",
-      "description": "灵感雷达 Idea Radar — 自动扫描 10 个灵感频道的无人值守信号站，每 2 小时巡扫，Vercel 自动部署",
-      "url": "https://github.com/szwnba/idea-radar",
-      "homepage": "https://idea-radar-seven.vercel.app",
-      "topics": [],
-      "language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "pct": 96.4
-        },
-        {
-          "name": "CSS",
-          "pct": 2.9
-        },
-        {
-          "name": "JavaScript",
-          "pct": 0.7
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-09-03T23:58:21Z",
-      "created_at": "2026-08-16T23:33:33Z",
-      "archived": false
-    },
-    {
       "name": "affweb",
       "description": "Johnson 的网络备忘录 · 126.plus",
       "url": "https://github.com/szwnba/affweb",
@@ -135,30 +162,38 @@
       "archived": false
     },
     {
-      "name": "szwnba.github.io",
-      "description": "个人项目介绍站 — 自动同步 GitHub 原创项目，Actions 每日更新，默认浅色/深色双主题",
-      "url": "https://github.com/szwnba/szwnba.github.io",
-      "homepage": "https://szwnba.github.io/",
+      "name": "coinlens",
+      "description": "币透 CoinLens · AI 加密货币研究台——四维(技术/资金/情绪/消息)结构化研报生成器",
+      "url": "https://github.com/szwnba/coinlens",
+      "homepage": "",
       "topics": [],
-      "language": "JavaScript",
+      "language": "Python",
       "languages": [
         {
-          "name": "JavaScript",
-          "pct": 44.7
+          "name": "Python",
+          "pct": 59.4
         },
         {
           "name": "CSS",
-          "pct": 35
+          "pct": 18.7
+        },
+        {
+          "name": "JavaScript",
+          "pct": 16.6
         },
         {
           "name": "HTML",
-          "pct": 20.3
+          "pct": 4.3
+        },
+        {
+          "name": "Shell",
+          "pct": 0.9
         }
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-03T03:06:41Z",
-      "created_at": "2026-08-17T18:30:35Z",
+      "pushed_at": "2026-09-03T17:01:43Z",
+      "created_at": "2026-09-03T17:01:10Z",
       "archived": false
     },
     {
@@ -459,5 +494,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-09-04T03:04:16.785Z"
+  "generated_at": "2026-09-05T03:06:15.771Z"
 }
