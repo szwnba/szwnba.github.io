@@ -8,7 +8,7 @@
     "followers": 56
   },
   "stats": {
-    "repos": 17,
+    "repos": 18,
     "stars": 87,
     "forks": 14,
     "languages": [
@@ -22,7 +22,7 @@
       },
       {
         "name": "JavaScript",
-        "count": 3
+        "count": 4
       },
       {
         "name": "TypeScript",
@@ -49,17 +49,36 @@
       "languages": [
         {
           "name": "HTML",
-          "pct": 96.3
+          "pct": 96.7
         },
         {
           "name": "CSS",
-          "pct": 3.7
+          "pct": 3.3
         }
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-05T00:53:29Z",
+      "pushed_at": "2026-09-06T00:53:17Z",
       "created_at": "2026-08-29T01:51:31Z",
+      "archived": false
+    },
+    {
+      "name": "cyber-morning",
+      "description": "赛博早安 · 每天自动生成的个人晨报:NASA 每日宇宙图 + 天气 + HackerNews + 币价 + 一首诗",
+      "url": "https://github.com/szwnba/cyber-morning",
+      "homepage": "",
+      "topics": [],
+      "language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "pct": 100
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-06T00:04:29Z",
+      "created_at": "2026-09-05T06:39:56Z",
       "archived": false
     },
     {
@@ -85,35 +104,8 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-04T23:56:48Z",
+      "pushed_at": "2026-09-05T23:47:27Z",
       "created_at": "2026-08-16T23:33:33Z",
-      "archived": false
-    },
-    {
-      "name": "szwnba.github.io",
-      "description": "个人项目介绍站 — 自动同步 GitHub 原创项目，Actions 每日更新，默认浅色/深色双主题",
-      "url": "https://github.com/szwnba/szwnba.github.io",
-      "homepage": "https://szwnba.github.io/",
-      "topics": [],
-      "language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "pct": 44.7
-        },
-        {
-          "name": "CSS",
-          "pct": 35
-        },
-        {
-          "name": "HTML",
-          "pct": 20.3
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-09-04T03:04:17Z",
-      "created_at": "2026-08-17T18:30:35Z",
       "archived": false
     },
     {
@@ -143,7 +135,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-04T02:31:59Z",
+      "pushed_at": "2026-09-05T10:49:35Z",
       "created_at": "2026-08-25T18:12:56Z",
       "archived": false
     },
@@ -157,8 +149,35 @@
       "languages": [],
       "stars": 79,
       "forks": 13,
-      "pushed_at": "2026-09-03T19:19:14Z",
+      "pushed_at": "2026-09-05T05:20:57Z",
       "created_at": "2022-08-25T16:37:55Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba.github.io",
+      "description": "个人项目介绍站 — 自动同步 GitHub 原创项目，Actions 每日更新，默认浅色/深色双主题",
+      "url": "https://github.com/szwnba/szwnba.github.io",
+      "homepage": "https://szwnba.github.io/",
+      "topics": [],
+      "language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "pct": 44.7
+        },
+        {
+          "name": "CSS",
+          "pct": 35
+        },
+        {
+          "name": "HTML",
+          "pct": 20.3
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-05T03:06:16Z",
+      "created_at": "2026-08-17T18:30:35Z",
       "archived": false
     },
     {
@@ -494,5 +513,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-09-05T03:06:15.771Z"
+  "generated_at": "2026-09-06T03:06:19.122Z"
 }
