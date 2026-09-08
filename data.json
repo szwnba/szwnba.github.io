@@ -5,12 +5,12 @@
     "bio": "写工具、做网站、折腾自动化",
     "avatar_url": "https://avatars.githubusercontent.com/u/7855369?v=4",
     "html_url": "https://github.com/szwnba",
-    "followers": 56
+    "followers": 57
   },
   "stats": {
     "repos": 18,
     "stars": 87,
-    "forks": 14,
+    "forks": 15,
     "languages": [
       {
         "name": "Python",
@@ -49,16 +49,16 @@
       "languages": [
         {
           "name": "HTML",
-          "pct": 97
+          "pct": 97.2
         },
         {
           "name": "CSS",
-          "pct": 3
+          "pct": 2.8
         }
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-07T00:55:19Z",
+      "pushed_at": "2026-09-08T01:10:40Z",
       "created_at": "2026-08-29T01:51:31Z",
       "archived": false
     },
@@ -77,7 +77,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-07T00:07:59Z",
+      "pushed_at": "2026-09-08T00:34:35Z",
       "created_at": "2026-09-05T06:39:56Z",
       "archived": false
     },
@@ -104,8 +104,27 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-06T23:48:26Z",
+      "pushed_at": "2026-09-07T22:46:41Z",
       "created_at": "2026-08-16T23:33:33Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba",
+      "description": "GitHub 个人主页（Profile README）",
+      "url": "https://github.com/szwnba/szwnba",
+      "homepage": "",
+      "topics": [],
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "pct": 100
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-07T06:55:54Z",
+      "created_at": "2024-07-20T10:27:31Z",
       "archived": false
     },
     {
@@ -118,7 +137,7 @@
       "languages": [],
       "stars": 79,
       "forks": 13,
-      "pushed_at": "2026-09-06T18:16:08Z",
+      "pushed_at": "2026-09-07T04:23:47Z",
       "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
@@ -145,7 +164,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-06T03:06:20Z",
+      "pushed_at": "2026-09-07T03:03:58Z",
       "created_at": "2026-08-17T18:30:35Z",
       "archived": false
     },
@@ -213,25 +232,6 @@
       "forks": 0,
       "pushed_at": "2026-09-03T17:01:43Z",
       "created_at": "2026-09-03T17:01:10Z",
-      "archived": false
-    },
-    {
-      "name": "szwnba",
-      "description": "GitHub 个人主页（Profile README）",
-      "url": "https://github.com/szwnba/szwnba",
-      "homepage": "",
-      "topics": [],
-      "language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "pct": 100
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-08-31T08:01:13Z",
-      "created_at": "2024-07-20T10:27:31Z",
       "archived": false
     },
     {
@@ -418,7 +418,7 @@
         }
       ],
       "stars": 1,
-      "forks": 0,
+      "forks": 1,
       "pushed_at": "2026-07-27T15:16:05Z",
       "created_at": "2026-06-20T13:57:18Z",
       "archived": false
@@ -513,5 +513,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-09-07T03:03:57.020Z"
+  "generated_at": "2026-09-08T03:13:23.333Z"
 }
