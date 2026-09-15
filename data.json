@@ -5,7 +5,7 @@
     "bio": "写工具、做网站、折腾自动化",
     "avatar_url": "https://avatars.githubusercontent.com/u/7855369?v=4",
     "html_url": "https://github.com/szwnba",
-    "followers": 58
+    "followers": 57
   },
   "stats": {
     "repos": 18,
@@ -49,17 +49,31 @@
       "languages": [
         {
           "name": "HTML",
-          "pct": 98.1
+          "pct": 98.2
         },
         {
           "name": "CSS",
-          "pct": 1.9
+          "pct": 1.8
         }
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-14T00:59:26Z",
+      "pushed_at": "2026-09-15T01:24:25Z",
       "created_at": "2026-08-29T01:51:31Z",
+      "archived": false
+    },
+    {
+      "name": "affweb",
+      "description": "Johnson 的网络备忘录 · 126.plus",
+      "url": "https://github.com/szwnba/affweb",
+      "homepage": "https://126.plus",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 80,
+      "forks": 13,
+      "pushed_at": "2026-09-15T01:07:04Z",
+      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -77,7 +91,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-14T00:18:42Z",
+      "pushed_at": "2026-09-15T00:45:07Z",
       "created_at": "2026-09-05T06:39:56Z",
       "archived": false
     },
@@ -104,8 +118,27 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-14T00:05:01Z",
+      "pushed_at": "2026-09-14T23:05:19Z",
       "created_at": "2026-08-16T23:33:33Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba",
+      "description": "GitHub 个人主页（Profile README）",
+      "url": "https://github.com/szwnba/szwnba",
+      "homepage": "",
+      "topics": [],
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "pct": 100
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-14T07:29:11Z",
+      "created_at": "2024-07-20T10:27:31Z",
       "archived": false
     },
     {
@@ -131,41 +164,8 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-13T03:21:29Z",
+      "pushed_at": "2026-09-14T03:32:58Z",
       "created_at": "2026-08-17T18:30:35Z",
-      "archived": false
-    },
-    {
-      "name": "affweb",
-      "description": "Johnson 的网络备忘录 · 126.plus",
-      "url": "https://github.com/szwnba/affweb",
-      "homepage": "https://126.plus",
-      "topics": [],
-      "language": null,
-      "languages": [],
-      "stars": 80,
-      "forks": 13,
-      "pushed_at": "2026-09-11T11:30:36Z",
-      "created_at": "2022-08-25T16:37:55Z",
-      "archived": false
-    },
-    {
-      "name": "szwnba",
-      "description": "GitHub 个人主页（Profile README）",
-      "url": "https://github.com/szwnba/szwnba",
-      "homepage": "",
-      "topics": [],
-      "language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "pct": 100
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-09-07T06:55:54Z",
-      "created_at": "2024-07-20T10:27:31Z",
       "archived": false
     },
     {
@@ -513,5 +513,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-09-14T03:32:57.784Z"
+  "generated_at": "2026-09-15T03:34:06.083Z"
 }
