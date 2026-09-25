@@ -8,13 +8,13 @@
     "followers": 57
   },
   "stats": {
-    "repos": 18,
+    "repos": 19,
     "stars": 88,
     "forks": 14,
     "languages": [
       {
         "name": "Python",
-        "count": 5
+        "count": 6
       },
       {
         "name": "HTML",
@@ -40,17 +40,38 @@
   },
   "repos": [
     {
-      "name": "affweb",
-      "description": "Johnson 的网络备忘录 · 126.plus",
-      "url": "https://github.com/szwnba/affweb",
-      "homepage": "https://126.plus",
+      "name": "johnson-skills",
+      "description": "个人 AI 工具箱：收藏与自研的 Agent Skills / MCP 配方 / Prompt",
+      "url": "https://github.com/szwnba/johnson-skills",
+      "homepage": "",
       "topics": [],
-      "language": null,
-      "languages": [],
-      "stars": 80,
-      "forks": 13,
-      "pushed_at": "2026-09-24T01:52:51Z",
-      "created_at": "2022-08-25T16:37:55Z",
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "pct": 40.4
+        },
+        {
+          "name": "HTML",
+          "pct": 29.3
+        },
+        {
+          "name": "Shell",
+          "pct": 23.9
+        },
+        {
+          "name": "JavaScript",
+          "pct": 3.3
+        },
+        {
+          "name": "TypeScript",
+          "pct": 3.2
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-25T02:09:09Z",
+      "created_at": "2026-09-25T01:56:32Z",
       "archived": false
     },
     {
@@ -72,7 +93,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-24T01:21:38Z",
+      "pushed_at": "2026-09-25T01:27:11Z",
       "created_at": "2026-08-29T01:51:31Z",
       "archived": false
     },
@@ -91,7 +112,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-24T00:39:44Z",
+      "pushed_at": "2026-09-25T00:39:00Z",
       "created_at": "2026-09-05T06:39:56Z",
       "archived": false
     },
@@ -118,7 +139,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-23T22:54:05Z",
+      "pushed_at": "2026-09-25T00:28:08Z",
       "created_at": "2026-08-16T23:33:33Z",
       "archived": false
     },
@@ -145,8 +166,22 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-23T03:29:20Z",
+      "pushed_at": "2026-09-24T03:19:06Z",
       "created_at": "2026-08-17T18:30:35Z",
+      "archived": false
+    },
+    {
+      "name": "affweb",
+      "description": "Johnson 的网络备忘录 · 126.plus",
+      "url": "https://github.com/szwnba/affweb",
+      "homepage": "https://126.plus",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 80,
+      "forks": 13,
+      "pushed_at": "2026-09-24T01:52:51Z",
+      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -513,5 +548,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-09-24T03:19:05.324Z"
+  "generated_at": "2026-09-25T03:36:40.271Z"
 }
