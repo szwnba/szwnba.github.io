@@ -8,20 +8,20 @@
     "followers": 57
   },
   "stats": {
-    "repos": 19,
+    "repos": 18,
     "stars": 89,
     "forks": 14,
     "languages": [
       {
         "name": "Python",
-        "count": 6
-      },
-      {
-        "name": "HTML",
-        "count": 4
+        "count": 5
       },
       {
         "name": "JavaScript",
+        "count": 4
+      },
+      {
+        "name": "HTML",
         "count": 4
       },
       {
@@ -40,45 +40,22 @@
   },
   "repos": [
     {
-      "name": "ai-blog",
-      "description": "全自动流水线生成的 AI 观察博客（由私有仓 wechat-article-pipeline 每日发布）",
-      "url": "https://github.com/szwnba/ai-blog",
+      "name": "szwnba",
+      "description": "GitHub 个人主页（Profile README）",
+      "url": "https://github.com/szwnba/szwnba",
       "homepage": "",
       "topics": [],
-      "language": "HTML",
+      "language": "Python",
       "languages": [
         {
-          "name": "HTML",
-          "pct": 98.9
-        },
-        {
-          "name": "CSS",
-          "pct": 1.1
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-09-26T01:30:19Z",
-      "created_at": "2026-08-29T01:51:31Z",
-      "archived": false
-    },
-    {
-      "name": "cyber-morning",
-      "description": "赛博早安 · 每天自动生成的个人晨报:NASA 每日宇宙图 + 天气 + HackerNews + 币价 + 一首诗",
-      "url": "https://github.com/szwnba/cyber-morning",
-      "homepage": "",
-      "topics": [],
-      "language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
+          "name": "Python",
           "pct": 100
         }
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-26T00:44:41Z",
-      "created_at": "2026-09-05T06:39:56Z",
+      "pushed_at": "2026-09-26T07:03:08Z",
+      "created_at": "2024-07-20T10:27:31Z",
       "archived": false
     },
     {
@@ -104,8 +81,77 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-25T23:15:02Z",
+      "pushed_at": "2026-09-26T04:47:09Z",
       "created_at": "2026-08-16T23:33:33Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba.github.io",
+      "description": "个人项目介绍站 — 自动同步 GitHub 原创项目，Actions 每日更新，默认浅色/深色双主题",
+      "url": "https://github.com/szwnba/szwnba.github.io",
+      "homepage": "https://szwnba.github.io/",
+      "topics": [],
+      "language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "pct": 44.7
+        },
+        {
+          "name": "CSS",
+          "pct": 35
+        },
+        {
+          "name": "HTML",
+          "pct": 20.3
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-26T03:42:13Z",
+      "created_at": "2026-08-17T18:30:35Z",
+      "archived": false
+    },
+    {
+      "name": "ai-blog",
+      "description": "全自动流水线生成的 AI 观察博客（由私有仓 wechat-article-pipeline 每日发布）",
+      "url": "https://github.com/szwnba/ai-blog",
+      "homepage": "https://szwnba.github.io/ai-blog/",
+      "topics": [],
+      "language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "pct": 98.9
+        },
+        {
+          "name": "CSS",
+          "pct": 1.1
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-26T01:30:19Z",
+      "created_at": "2026-08-29T01:51:31Z",
+      "archived": false
+    },
+    {
+      "name": "cyber-morning",
+      "description": "赛博早安 · 每天自动生成的个人晨报:NASA 每日宇宙图 + 天气 + HackerNews + 币价 + 一首诗",
+      "url": "https://github.com/szwnba/cyber-morning",
+      "homepage": "https://szwnba.github.io/cyber-morning/",
+      "topics": [],
+      "language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "pct": 100
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-26T00:44:41Z",
+      "created_at": "2026-09-05T06:39:56Z",
       "archived": false
     },
     {
@@ -126,7 +172,7 @@
       "name": "johnson-skills",
       "description": "个人 AI 工具箱：收藏与自研的 Agent Skills / MCP 配方 / Prompt",
       "url": "https://github.com/szwnba/johnson-skills",
-      "homepage": "",
+      "homepage": "https://szwnba.github.io/johnson-skills/",
       "topics": [],
       "language": "Python",
       "languages": [
@@ -155,52 +201,6 @@
       "forks": 0,
       "pushed_at": "2026-09-25T12:36:42Z",
       "created_at": "2026-09-25T01:56:32Z",
-      "archived": false
-    },
-    {
-      "name": "szwnba.github.io",
-      "description": "个人项目介绍站 — 自动同步 GitHub 原创项目，Actions 每日更新，默认浅色/深色双主题",
-      "url": "https://github.com/szwnba/szwnba.github.io",
-      "homepage": "https://szwnba.github.io/",
-      "topics": [],
-      "language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "pct": 44.7
-        },
-        {
-          "name": "CSS",
-          "pct": 35
-        },
-        {
-          "name": "HTML",
-          "pct": 20.3
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-09-25T03:36:41Z",
-      "created_at": "2026-08-17T18:30:35Z",
-      "archived": false
-    },
-    {
-      "name": "szwnba",
-      "description": "GitHub 个人主页（Profile README）",
-      "url": "https://github.com/szwnba/szwnba",
-      "homepage": "",
-      "topics": [],
-      "language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "pct": 100
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-09-21T07:32:57Z",
-      "created_at": "2024-07-20T10:27:31Z",
       "archived": false
     },
     {
@@ -397,41 +397,6 @@
       "archived": false
     },
     {
-      "name": "zhihu-seo",
-      "description": "知乎长尾关键词挖掘与内容矩阵规划平台",
-      "url": "https://github.com/szwnba/zhihu-seo",
-      "homepage": "",
-      "topics": [],
-      "language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "pct": 72.2
-        },
-        {
-          "name": "TypeScript",
-          "pct": 25.7
-        },
-        {
-          "name": "CSS",
-          "pct": 1
-        },
-        {
-          "name": "JavaScript",
-          "pct": 0.6
-        },
-        {
-          "name": "Makefile",
-          "pct": 0.3
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-07-29T14:46:17Z",
-      "created_at": "2026-07-29T01:04:22Z",
-      "archived": false
-    },
-    {
       "name": "mindnest",
       "description": "心栖 MindNest — 专业人格心理测评平台 (Next.js 15 + TypeScript + Tailwind)",
       "url": "https://github.com/szwnba/mindnest",
@@ -548,5 +513,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-09-26T03:42:11.908Z"
+  "generated_at": "2026-09-26T07:05:53.620Z"
 }
