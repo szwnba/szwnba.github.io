@@ -9,7 +9,7 @@
   },
   "stats": {
     "repos": 19,
-    "stars": 88,
+    "stars": 89,
     "forks": 14,
     "languages": [
       {
@@ -39,6 +39,89 @@
     ]
   },
   "repos": [
+    {
+      "name": "ai-blog",
+      "description": "全自动流水线生成的 AI 观察博客（由私有仓 wechat-article-pipeline 每日发布）",
+      "url": "https://github.com/szwnba/ai-blog",
+      "homepage": "",
+      "topics": [],
+      "language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "pct": 98.9
+        },
+        {
+          "name": "CSS",
+          "pct": 1.1
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-26T01:30:19Z",
+      "created_at": "2026-08-29T01:51:31Z",
+      "archived": false
+    },
+    {
+      "name": "cyber-morning",
+      "description": "赛博早安 · 每天自动生成的个人晨报:NASA 每日宇宙图 + 天气 + HackerNews + 币价 + 一首诗",
+      "url": "https://github.com/szwnba/cyber-morning",
+      "homepage": "",
+      "topics": [],
+      "language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "pct": 100
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-26T00:44:41Z",
+      "created_at": "2026-09-05T06:39:56Z",
+      "archived": false
+    },
+    {
+      "name": "idea-radar",
+      "description": "灵感雷达 Idea Radar — 自动扫描 10 个灵感频道的无人值守信号站，每 2 小时巡扫，Vercel 自动部署",
+      "url": "https://github.com/szwnba/idea-radar",
+      "homepage": "https://idea-radar-seven.vercel.app",
+      "topics": [],
+      "language": "TypeScript",
+      "languages": [
+        {
+          "name": "TypeScript",
+          "pct": 96.4
+        },
+        {
+          "name": "CSS",
+          "pct": 2.9
+        },
+        {
+          "name": "JavaScript",
+          "pct": 0.7
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-25T23:15:02Z",
+      "created_at": "2026-08-16T23:33:33Z",
+      "archived": false
+    },
+    {
+      "name": "affweb",
+      "description": "Johnson 的网络备忘录 · 126.plus",
+      "url": "https://github.com/szwnba/affweb",
+      "homepage": "https://126.plus",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 80,
+      "forks": 13,
+      "pushed_at": "2026-09-25T20:02:13Z",
+      "created_at": "2022-08-25T16:37:55Z",
+      "archived": false
+    },
     {
       "name": "johnson-skills",
       "description": "个人 AI 工具箱：收藏与自研的 Agent Skills / MCP 配方 / Prompt",
@@ -70,77 +153,8 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-25T02:09:09Z",
+      "pushed_at": "2026-09-25T12:36:42Z",
       "created_at": "2026-09-25T01:56:32Z",
-      "archived": false
-    },
-    {
-      "name": "ai-blog",
-      "description": "全自动流水线生成的 AI 观察博客（由私有仓 wechat-article-pipeline 每日发布）",
-      "url": "https://github.com/szwnba/ai-blog",
-      "homepage": "",
-      "topics": [],
-      "language": "HTML",
-      "languages": [
-        {
-          "name": "HTML",
-          "pct": 98.8
-        },
-        {
-          "name": "CSS",
-          "pct": 1.2
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-09-25T01:27:11Z",
-      "created_at": "2026-08-29T01:51:31Z",
-      "archived": false
-    },
-    {
-      "name": "cyber-morning",
-      "description": "赛博早安 · 每天自动生成的个人晨报:NASA 每日宇宙图 + 天气 + HackerNews + 币价 + 一首诗",
-      "url": "https://github.com/szwnba/cyber-morning",
-      "homepage": "",
-      "topics": [],
-      "language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "pct": 100
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-09-25T00:39:00Z",
-      "created_at": "2026-09-05T06:39:56Z",
-      "archived": false
-    },
-    {
-      "name": "idea-radar",
-      "description": "灵感雷达 Idea Radar — 自动扫描 10 个灵感频道的无人值守信号站，每 2 小时巡扫，Vercel 自动部署",
-      "url": "https://github.com/szwnba/idea-radar",
-      "homepage": "https://idea-radar-seven.vercel.app",
-      "topics": [],
-      "language": "TypeScript",
-      "languages": [
-        {
-          "name": "TypeScript",
-          "pct": 96.4
-        },
-        {
-          "name": "CSS",
-          "pct": 2.9
-        },
-        {
-          "name": "JavaScript",
-          "pct": 0.7
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-09-25T00:28:08Z",
-      "created_at": "2026-08-16T23:33:33Z",
       "archived": false
     },
     {
@@ -166,22 +180,8 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-24T03:19:06Z",
+      "pushed_at": "2026-09-25T03:36:41Z",
       "created_at": "2026-08-17T18:30:35Z",
-      "archived": false
-    },
-    {
-      "name": "affweb",
-      "description": "Johnson 的网络备忘录 · 126.plus",
-      "url": "https://github.com/szwnba/affweb",
-      "homepage": "https://126.plus",
-      "topics": [],
-      "language": null,
-      "languages": [],
-      "stars": 80,
-      "forks": 13,
-      "pushed_at": "2026-09-24T01:52:51Z",
-      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -452,7 +452,7 @@
           "pct": 0.1
         }
       ],
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "pushed_at": "2026-07-27T15:16:05Z",
       "created_at": "2026-06-20T13:57:18Z",
@@ -548,5 +548,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-09-25T03:36:40.271Z"
+  "generated_at": "2026-09-26T03:42:11.908Z"
 }
