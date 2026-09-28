@@ -8,7 +8,7 @@
     "followers": 57
   },
   "stats": {
-    "repos": 18,
+    "repos": 19,
     "stars": 89,
     "forks": 14,
     "languages": [
@@ -40,20 +40,6 @@
   },
   "repos": [
     {
-      "name": "affweb",
-      "description": "Johnson 的网络备忘录 · 126.plus",
-      "url": "https://github.com/szwnba/affweb",
-      "homepage": "https://126.plus",
-      "topics": [],
-      "language": null,
-      "languages": [],
-      "stars": 80,
-      "forks": 13,
-      "pushed_at": "2026-09-27T02:53:17Z",
-      "created_at": "2022-08-25T16:37:55Z",
-      "archived": false
-    },
-    {
       "name": "ai-blog",
       "description": "全自动流水线生成的 AI 观察博客（由私有仓 wechat-article-pipeline 每日发布）",
       "url": "https://github.com/szwnba/ai-blog",
@@ -72,8 +58,22 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-27T01:22:15Z",
+      "pushed_at": "2026-09-28T01:37:49Z",
       "created_at": "2026-08-29T01:51:31Z",
+      "archived": false
+    },
+    {
+      "name": "affweb",
+      "description": "Johnson 的网络备忘录 · 126.plus",
+      "url": "https://github.com/szwnba/affweb",
+      "homepage": "https://126.plus",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 80,
+      "forks": 13,
+      "pushed_at": "2026-09-28T01:07:19Z",
+      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -91,7 +91,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-27T00:44:48Z",
+      "pushed_at": "2026-09-28T00:59:23Z",
       "created_at": "2026-09-05T06:39:56Z",
       "archived": false
     },
@@ -118,8 +118,22 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-27T00:27:21Z",
+      "pushed_at": "2026-09-27T22:58:19Z",
       "created_at": "2026-08-16T23:33:33Z",
+      "archived": false
+    },
+    {
+      "name": "we-article",
+      "description": "公众号内容创作知识库 — Obsidian + AI Agent 的会生长知识库（Raw/Wiki/Schema 三层）",
+      "url": "https://github.com/szwnba/we-article",
+      "homepage": "",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-09-27T15:16:25Z",
+      "created_at": "2026-09-27T15:16:21Z",
       "archived": false
     },
     {
@@ -145,7 +159,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-09-26T07:05:54Z",
+      "pushed_at": "2026-09-27T03:51:29Z",
       "created_at": "2026-08-17T18:30:35Z",
       "archived": false
     },
@@ -513,5 +527,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-09-27T03:51:28.719Z"
+  "generated_at": "2026-09-28T03:51:08.400Z"
 }
