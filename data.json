@@ -40,29 +40,6 @@
   },
   "repos": [
     {
-      "name": "koreader-host-monitor",
-      "description": "Kindle (KOReader) e-ink dashboard for PC host resources: CPU / MEM / DISK / NET / top procs. 3-min auto refresh, vector-rendered grayscale cover, optional multi-host agents.",
-      "url": "https://github.com/szwnba/koreader-host-monitor",
-      "homepage": "",
-      "topics": [],
-      "language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "pct": 54.1
-        },
-        {
-          "name": "Lua",
-          "pct": 45.9
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-10-06T04:42:09Z",
-      "created_at": "2026-10-05T11:35:17Z",
-      "archived": false
-    },
-    {
       "name": "ai-blog",
       "description": "全自动流水线生成的 AI 观察博客（由私有仓 wechat-article-pipeline 每日发布）",
       "url": "https://github.com/szwnba/ai-blog",
@@ -72,16 +49,16 @@
       "languages": [
         {
           "name": "HTML",
-          "pct": 99.1
+          "pct": 99.2
         },
         {
           "name": "CSS",
-          "pct": 0.9
+          "pct": 0.8
         }
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-06T02:55:28Z",
+      "pushed_at": "2026-10-07T02:17:27Z",
       "created_at": "2026-08-29T01:51:31Z",
       "archived": false
     },
@@ -100,7 +77,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-06T02:22:54Z",
+      "pushed_at": "2026-10-07T01:42:26Z",
       "created_at": "2026-09-05T06:39:56Z",
       "archived": false
     },
@@ -127,8 +104,58 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-05T22:32:29Z",
+      "pushed_at": "2026-10-07T01:25:27Z",
       "created_at": "2026-08-16T23:33:33Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba.github.io",
+      "description": "个人项目介绍站 — 自动同步 GitHub 原创项目，Actions 每日更新，默认浅色/深色双主题",
+      "url": "https://github.com/szwnba/szwnba.github.io",
+      "homepage": "https://szwnba.github.io/",
+      "topics": [],
+      "language": "JavaScript",
+      "languages": [
+        {
+          "name": "JavaScript",
+          "pct": 44.7
+        },
+        {
+          "name": "CSS",
+          "pct": 35
+        },
+        {
+          "name": "HTML",
+          "pct": 20.3
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-10-06T05:03:10Z",
+      "created_at": "2026-08-17T18:30:35Z",
+      "archived": false
+    },
+    {
+      "name": "koreader-host-monitor",
+      "description": "Kindle (KOReader) e-ink dashboard for PC host resources: CPU / MEM / DISK / NET / top procs. 3-min auto refresh, vector-rendered grayscale cover, optional multi-host agents.",
+      "url": "https://github.com/szwnba/koreader-host-monitor",
+      "homepage": "",
+      "topics": [],
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "pct": 54.1
+        },
+        {
+          "name": "Lua",
+          "pct": 45.9
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-10-06T04:42:09Z",
+      "created_at": "2026-10-05T11:35:17Z",
       "archived": false
     },
     {
@@ -162,33 +189,6 @@
       "forks": 0,
       "pushed_at": "2026-10-05T08:10:09Z",
       "created_at": "2024-07-20T10:27:31Z",
-      "archived": false
-    },
-    {
-      "name": "szwnba.github.io",
-      "description": "个人项目介绍站 — 自动同步 GitHub 原创项目，Actions 每日更新，默认浅色/深色双主题",
-      "url": "https://github.com/szwnba/szwnba.github.io",
-      "homepage": "https://szwnba.github.io/",
-      "topics": [],
-      "language": "JavaScript",
-      "languages": [
-        {
-          "name": "JavaScript",
-          "pct": 44.7
-        },
-        {
-          "name": "CSS",
-          "pct": 35
-        },
-        {
-          "name": "HTML",
-          "pct": 20.3
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-10-05T04:14:46Z",
-      "created_at": "2026-08-17T18:30:35Z",
       "archived": false
     },
     {
@@ -550,5 +550,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-10-06T05:03:09.245Z"
+  "generated_at": "2026-10-07T04:29:52.642Z"
 }
