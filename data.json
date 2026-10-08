@@ -58,7 +58,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-07T02:17:27Z",
+      "pushed_at": "2026-10-08T03:01:50Z",
       "created_at": "2026-08-29T01:51:31Z",
       "archived": false
     },
@@ -77,7 +77,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-07T01:42:26Z",
+      "pushed_at": "2026-10-08T02:09:29Z",
       "created_at": "2026-09-05T06:39:56Z",
       "archived": false
     },
@@ -104,8 +104,22 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-07T01:25:27Z",
+      "pushed_at": "2026-10-07T23:01:18Z",
       "created_at": "2026-08-16T23:33:33Z",
+      "archived": false
+    },
+    {
+      "name": "affweb",
+      "description": "Johnson 的网络备忘录 · 126.plus",
+      "url": "https://github.com/szwnba/affweb",
+      "homepage": "https://126.plus",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 79,
+      "forks": 13,
+      "pushed_at": "2026-10-07T11:12:49Z",
+      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -131,7 +145,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-06T05:03:10Z",
+      "pushed_at": "2026-10-07T04:29:53Z",
       "created_at": "2026-08-17T18:30:35Z",
       "archived": false
     },
@@ -156,20 +170,6 @@
       "forks": 0,
       "pushed_at": "2026-10-06T04:42:09Z",
       "created_at": "2026-10-05T11:35:17Z",
-      "archived": false
-    },
-    {
-      "name": "affweb",
-      "description": "Johnson 的网络备忘录 · 126.plus",
-      "url": "https://github.com/szwnba/affweb",
-      "homepage": "https://126.plus",
-      "topics": [],
-      "language": null,
-      "languages": [],
-      "stars": 79,
-      "forks": 13,
-      "pushed_at": "2026-10-05T13:38:16Z",
-      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -550,5 +550,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-10-07T04:29:52.642Z"
+  "generated_at": "2026-10-08T04:40:52.838Z"
 }
