@@ -58,7 +58,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-08T03:01:50Z",
+      "pushed_at": "2026-10-09T02:56:12Z",
       "created_at": "2026-08-29T01:51:31Z",
       "archived": false
     },
@@ -77,8 +77,31 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-08T02:09:29Z",
+      "pushed_at": "2026-10-09T02:21:49Z",
       "created_at": "2026-09-05T06:39:56Z",
+      "archived": false
+    },
+    {
+      "name": "study",
+      "description": "学习资料阅读 PWA：中英文材料 + 学习笔记",
+      "url": "https://github.com/szwnba/study",
+      "homepage": "https://study-drab-eta.vercel.app",
+      "topics": [],
+      "language": "HTML",
+      "languages": [
+        {
+          "name": "HTML",
+          "pct": 96.8
+        },
+        {
+          "name": "JavaScript",
+          "pct": 3.2
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-10-09T02:12:50Z",
+      "created_at": "2026-08-04T13:19:11Z",
       "archived": false
     },
     {
@@ -104,22 +127,8 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-07T23:01:18Z",
+      "pushed_at": "2026-10-09T00:16:01Z",
       "created_at": "2026-08-16T23:33:33Z",
-      "archived": false
-    },
-    {
-      "name": "affweb",
-      "description": "Johnson 的网络备忘录 · 126.plus",
-      "url": "https://github.com/szwnba/affweb",
-      "homepage": "https://126.plus",
-      "topics": [],
-      "language": null,
-      "languages": [],
-      "stars": 79,
-      "forks": 13,
-      "pushed_at": "2026-10-07T11:12:49Z",
-      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -145,8 +154,22 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-07T04:29:53Z",
+      "pushed_at": "2026-10-08T04:40:53Z",
       "created_at": "2026-08-17T18:30:35Z",
+      "archived": false
+    },
+    {
+      "name": "affweb",
+      "description": "Johnson 的网络备忘录 · 126.plus",
+      "url": "https://github.com/szwnba/affweb",
+      "homepage": "https://126.plus",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 79,
+      "forks": 13,
+      "pushed_at": "2026-10-07T11:12:49Z",
+      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -411,29 +434,6 @@
       "archived": false
     },
     {
-      "name": "study",
-      "description": "学习资料阅读 PWA：中英文材料 + 学习笔记",
-      "url": "https://github.com/szwnba/study",
-      "homepage": "https://study-drab-eta.vercel.app",
-      "topics": [],
-      "language": "HTML",
-      "languages": [
-        {
-          "name": "HTML",
-          "pct": 99.8
-        },
-        {
-          "name": "JavaScript",
-          "pct": 0.2
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-08-04T13:21:27Z",
-      "created_at": "2026-08-04T13:19:11Z",
-      "archived": false
-    },
-    {
       "name": "mindnest",
       "description": "心栖 MindNest — 专业人格心理测评平台 (Next.js 15 + TypeScript + Tailwind)",
       "url": "https://github.com/szwnba/mindnest",
@@ -550,5 +550,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-10-08T04:40:52.838Z"
+  "generated_at": "2026-10-09T04:43:59.827Z"
 }
