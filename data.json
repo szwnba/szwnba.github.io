@@ -8,13 +8,13 @@
     "followers": 61
   },
   "stats": {
-    "repos": 20,
-    "stars": 89,
+    "repos": 19,
+    "stars": 90,
     "forks": 14,
     "languages": [
       {
         "name": "Python",
-        "count": 6
+        "count": 5
       },
       {
         "name": "JavaScript",
@@ -54,7 +54,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-27T01:33:46Z",
+      "pushed_at": "2026-10-28T01:31:13Z",
       "created_at": "2026-09-05T06:39:56Z",
       "archived": false
     },
@@ -81,27 +81,8 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-26T23:45:39Z",
+      "pushed_at": "2026-10-28T01:14:31Z",
       "created_at": "2026-08-16T23:33:33Z",
-      "archived": false
-    },
-    {
-      "name": "szwnba",
-      "description": "GitHub 个人主页（Profile README）",
-      "url": "https://github.com/szwnba/szwnba",
-      "homepage": "",
-      "topics": [],
-      "language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "pct": 100
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-10-26T07:20:48Z",
-      "created_at": "2024-07-20T10:27:31Z",
       "archived": false
     },
     {
@@ -127,8 +108,27 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-26T03:23:25Z",
+      "pushed_at": "2026-10-27T03:50:56Z",
       "created_at": "2026-08-17T18:30:35Z",
+      "archived": false
+    },
+    {
+      "name": "szwnba",
+      "description": "GitHub 个人主页（Profile README）",
+      "url": "https://github.com/szwnba/szwnba",
+      "homepage": "",
+      "topics": [],
+      "language": "Python",
+      "languages": [
+        {
+          "name": "Python",
+          "pct": 100
+        }
+      ],
+      "stars": 0,
+      "forks": 0,
+      "pushed_at": "2026-10-26T07:20:48Z",
+      "created_at": "2024-07-20T10:27:31Z",
       "archived": false
     },
     {
@@ -155,33 +155,6 @@
       "archived": false
     },
     {
-      "name": "koreader-host-monitor",
-      "description": "Kindle (KOReader) e-ink dashboard for PC host resources: CPU / MEM / DISK / NET / top procs. 3-min auto refresh, vector-rendered grayscale cover, optional multi-host agents.",
-      "url": "https://github.com/szwnba/koreader-host-monitor",
-      "homepage": "",
-      "topics": [],
-      "language": "Python",
-      "languages": [
-        {
-          "name": "Python",
-          "pct": 47.3
-        },
-        {
-          "name": "Lua",
-          "pct": 40.4
-        },
-        {
-          "name": "HTML",
-          "pct": 12.3
-        }
-      ],
-      "stars": 0,
-      "forks": 0,
-      "pushed_at": "2026-10-18T17:49:52Z",
-      "created_at": "2026-10-05T11:35:17Z",
-      "archived": false
-    },
-    {
       "name": "affweb",
       "description": "Johnson 的网络备忘录 · 126.plus",
       "url": "https://github.com/szwnba/affweb",
@@ -189,7 +162,7 @@
       "topics": [],
       "language": null,
       "languages": [],
-      "stars": 79,
+      "stars": 80,
       "forks": 13,
       "pushed_at": "2026-10-18T09:56:39Z",
       "created_at": "2022-08-25T16:37:55Z",
@@ -554,5 +527,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-10-27T03:50:55.154Z"
+  "generated_at": "2026-10-28T04:10:42.451Z"
 }
