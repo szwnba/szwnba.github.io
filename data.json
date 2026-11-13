@@ -40,6 +40,20 @@
   },
   "repos": [
     {
+      "name": "affweb",
+      "description": "Johnson 的网络备忘录 · 126.plus",
+      "url": "https://github.com/szwnba/affweb",
+      "homepage": "https://126.plus",
+      "topics": [],
+      "language": null,
+      "languages": [],
+      "stars": 81,
+      "forks": 13,
+      "pushed_at": "2026-11-13T04:52:00Z",
+      "created_at": "2022-08-25T16:37:55Z",
+      "archived": false
+    },
+    {
       "name": "ai-blog",
       "description": "全自动流水线生成的 AI 观察博客（由私有仓 wechat-article-pipeline 每日发布）",
       "url": "https://github.com/szwnba/ai-blog",
@@ -58,7 +72,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-11-12T03:46:30Z",
+      "pushed_at": "2026-11-13T03:23:09Z",
       "created_at": "2026-08-29T01:51:31Z",
       "archived": false
     },
@@ -77,7 +91,7 @@
       ],
       "stars": 1,
       "forks": 0,
-      "pushed_at": "2026-11-12T03:11:59Z",
+      "pushed_at": "2026-11-13T02:44:12Z",
       "created_at": "2026-09-05T06:39:56Z",
       "archived": false
     },
@@ -104,22 +118,8 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-11-12T00:30:52Z",
+      "pushed_at": "2026-11-13T01:00:32Z",
       "created_at": "2026-08-16T23:33:33Z",
-      "archived": false
-    },
-    {
-      "name": "affweb",
-      "description": "Johnson 的网络备忘录 · 126.plus",
-      "url": "https://github.com/szwnba/affweb",
-      "homepage": "https://126.plus",
-      "topics": [],
-      "language": null,
-      "languages": [],
-      "stars": 81,
-      "forks": 13,
-      "pushed_at": "2026-11-11T22:44:49Z",
-      "created_at": "2022-08-25T16:37:55Z",
       "archived": false
     },
     {
@@ -145,7 +145,7 @@
       ],
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-11-11T04:51:15Z",
+      "pushed_at": "2026-11-12T05:53:13Z",
       "created_at": "2026-08-17T18:30:35Z",
       "archived": false
     },
@@ -550,5 +550,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-11-12T05:53:12.637Z"
+  "generated_at": "2026-11-13T05:15:01.671Z"
 }
